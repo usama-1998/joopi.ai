@@ -236,18 +236,18 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
   const active = features[activeIndex] || features[0];
 
   return (
-    <section className="bg-background relative border-b border-border py-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-background relative border-b border-border py-16 lg:py-24 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Header and Controls */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 lg:mb-16">
           <div>
             <p className="font-mono text-[13px] font-semibold uppercase tracking-widest text-primary mb-3">Core Solutions</p>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold leading-tight text-foreground">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
               Automated Growth Engines
             </h2>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 hidden md:flex">
             <button 
               onClick={handlePrev}
               className="w-12 h-12 rounded-full border border-border bg-card hover:bg-muted flex items-center justify-center transition-colors cursor-pointer"
@@ -265,27 +265,27 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
 
         {/* Carousel Content */}
         <div 
-          className="relative bg-card border border-border/50 rounded-[32px] p-8 md:p-12 lg:p-16 shadow-2xl overflow-hidden min-h-[650px] flex flex-col justify-center"
+          className="relative bg-card border border-border/50 rounded-[24px] lg:rounded-[32px] p-6 sm:p-8 md:p-12 lg:p-16 shadow-2xl overflow-hidden min-h-[650px] flex flex-col justify-center"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
-          <div className="flex flex-col lg:flex-row gap-16 items-center relative z-10 w-full">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center relative z-10 w-full">
             {/* Left Text */}
             <div className="w-full lg:w-1/2">
               <div key={`text-${activeIndex}`} className="animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border bg-background mb-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border bg-background mb-4 lg:mb-6">
                   <Icon icon={active.badgeIcon} className="text-primary text-sm" />
-                  <span className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">{active.badgeText}</span>
+                  <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">{active.badgeText}</span>
                 </div>
-                <h3 className="font-heading text-3xl lg:text-4xl font-bold leading-tight text-foreground mb-6">
+                <h3 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-foreground mb-4 lg:mb-6">
                   {active.title}
                 </h3>
-                <p className="text-[17px] text-muted-foreground leading-relaxed mb-10">
+                <p className="text-[15px] sm:text-[17px] text-muted-foreground leading-relaxed mb-8 lg:mb-10">
                   {active.description}
                 </p>
-                <button onClick={onActionClick} className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full transition-all inline-flex items-center gap-2 cursor-pointer text-[15px]">
+                <button onClick={onActionClick} className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3.5 sm:py-4 rounded-full transition-all flex items-center justify-center gap-2 cursor-pointer text-[14px] sm:text-[15px]">
                   {active.ctaText}
                   <Icon icon="lucide:arrow-right" className="text-lg" />
                 </button>

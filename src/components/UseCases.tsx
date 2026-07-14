@@ -151,16 +151,16 @@ export const UseCases: React.FC = () => {
   return (
     <section id="use-cases" className="py-24 border-b border-white/5 bg-background relative z-10">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 mb-20">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 mb-12 lg:mb-20">
           <div className="max-w-2xl">
-            <p className="font-mono text-[13px] font-semibold uppercase tracking-widest text-white/60 mb-6">Our Services</p>
-            <h2 className="font-heading text-4xl md:text-[44px] font-bold leading-[1.15] text-white tracking-tight">
+            <p className="font-mono text-[13px] font-semibold uppercase tracking-widest text-white/60 mb-4 lg:mb-6">Our Services</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-[44px] font-bold leading-[1.15] text-white tracking-tight">
               Fully Managed Ecosystem<br/>
               Built For Scale.
             </h2>
           </div>
           <div className="lg:w-[480px] lg:pt-14">
-            <p className="text-[16px] text-white/80 leading-relaxed">
+            <p className="text-[15px] md:text-[16px] text-white/80 leading-relaxed">
               We handle the complex backend automations so you can focus entirely on closing deals and driving revenue. From missed calls to dormant leads, we turn gaps into growth.
             </p>
           </div>

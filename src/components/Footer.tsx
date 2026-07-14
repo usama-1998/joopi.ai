@@ -3,20 +3,20 @@ import { Icon } from '@iconify/react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-background border-t border-border pt-[160px] pb-12 px-6 -mt-[40px] relative z-0 overflow-hidden font-sans">
+    <footer className="bg-background border-t border-border pt-[100px] md:pt-[160px] pb-12 px-6 -mt-[40px] relative z-0 overflow-hidden font-sans">
       <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 border-b border-white/5 pb-16 mb-16">
-          <h2 className="font-heading text-3xl md:text-[42px] font-bold text-foreground text-center lg:text-left tracking-tight">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 border-b border-white/5 pb-12 md:pb-16 mb-12 md:mb-16">
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-[42px] font-bold text-foreground text-center lg:text-left tracking-tight">
             Experience effortless scaling with elite AI operations.
           </h2>
-          <div className="flex flex-wrap justify-center gap-4 shrink-0">
-            <a href="#strategy" className="bg-white hover:bg-gray-100 text-black font-semibold px-7 py-3.5 rounded-full transition-all inline-flex items-center gap-2 text-[15px]">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 shrink-0 w-full md:w-auto">
+            <a href="#strategy" className="w-full sm:w-auto bg-white hover:bg-gray-100 text-black font-semibold px-7 py-3.5 rounded-full transition-all flex items-center justify-center gap-2 text-[14px] sm:text-[15px]">
               Book Strategy Call
               <span className="text-[10px] ml-1">▶</span>
             </a>
-            <a href="#demo" className="border border-white/10 hover:bg-white/5 text-foreground font-semibold px-7 py-3.5 rounded-full transition-all inline-flex items-center gap-2.5 text-[15px]">
+            <a href="#demo" className="w-full sm:w-auto border border-white/10 hover:bg-white/5 text-foreground font-semibold px-7 py-3.5 rounded-full transition-all flex items-center justify-center gap-2.5 text-[14px] sm:text-[15px]">
               <Icon icon="lucide:play-circle" className="text-lg opacity-80" />
               Watch Demo
             </a>
@@ -24,9 +24,9 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col lg:flex-row justify-between gap-16 lg:gap-8">
+        <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-8">
           {/* Left Column: Brand & Copyright */}
-          <div className="flex flex-col items-start gap-8 lg:w-1/3">
+          <div className="flex flex-col items-start gap-6 lg:gap-8 lg:w-1/3">
             <div className="flex items-center gap-3">
               <div className="relative flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-tr from-[#4ade80] to-[#22c55e] rounded-[6px] transform rotate-6 opacity-40"></div>
@@ -53,7 +53,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Right Columns: Links */}
-          <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-10 lg:gap-8 max-w-3xl">
+          <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 lg:gap-8 max-w-3xl">
             <div>
               <h4 className="text-foreground font-bold text-[12px] mb-6 tracking-wider uppercase">Services</h4>
               <ul className="space-y-4">
@@ -93,7 +93,7 @@ export const Footer: React.FC = () => {
       
       {/* Background Watermark */}
       <div 
-        className="absolute -bottom-[2vw] left-0 right-0 w-full flex justify-center text-[10vw] font-heading font-black text-transparent select-none pointer-events-none tracking-tight whitespace-nowrap z-0 opacity-40" 
+        className="absolute -bottom-[2vw] left-0 right-0 w-full flex justify-center text-[12vw] sm:text-[10vw] font-heading font-black text-transparent select-none pointer-events-none tracking-tight whitespace-nowrap z-0 opacity-40" 
         style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.08)' }}
       >
         1 Click Outcome

@@ -103,7 +103,7 @@ export const Testimonial: React.FC = () => {
         </div>
 
         {/* Content */}
-        <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-start justify-center mt-20 min-h-[400px]">
+        <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-center md:items-start justify-center mt-20 min-h-[400px]">
           
           {/* Left Column: Author */}
           <div className="flex flex-col items-center md:items-start shrink-0">
@@ -143,10 +143,10 @@ export const Testimonial: React.FC = () => {
           </div>
 
           {/* Right Column: Quote & Stats */}
-          <div className="flex-1 max-w-2xl md:pt-4">
+          <div className="flex-1 max-w-2xl md:pt-4 flex flex-col items-center md:items-start">
             <p 
               key={`quote-${activeIndex}`}
-              className="font-serif text-xl md:text-[21px] leading-[1.7] text-foreground/90 mb-12 animate-in fade-in slide-in-from-bottom-2 duration-500"
+              className="font-serif text-xl md:text-[21px] leading-[1.7] text-foreground/90 mb-12 animate-in fade-in slide-in-from-bottom-2 duration-500 text-center md:text-left"
             >
               “{active.quote}”
             </p>
@@ -154,7 +154,7 @@ export const Testimonial: React.FC = () => {
             {/* Blueprint Stats Box */}
             <div 
               key={`stats-${activeIndex}`}
-              className="relative border border-[#31403E] py-8 px-6 grid grid-cols-1 sm:grid-cols-2 gap-8 items-center animate-in fade-in duration-700"
+              className="relative border border-[#31403E] py-8 px-6 grid grid-cols-1 sm:grid-cols-2 gap-8 items-center animate-in fade-in duration-700 w-full"
             >
               
               {/* Corner crosshairs */}

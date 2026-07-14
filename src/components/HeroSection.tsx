@@ -3,8 +3,8 @@ import { Icon } from '@iconify/react';
 
 export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFreeClick }) => {
   return (
-    <div className="max-w-4xl mx-auto text-center relative z-10 pt-8">
-      <div className="flex justify-center items-center gap-4 mb-8">
+    <div className="max-w-4xl mx-auto text-center relative z-10 pt-8 px-4">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 mb-8">
         <div className="flex -space-x-3">
           <img className="w-8 h-8 rounded-full border-2 border-[#101b19] object-cover" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" />
           <img className="w-8 h-8 rounded-full border-2 border-[#101b19] object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" />
@@ -12,36 +12,36 @@ export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFre
           <img className="w-8 h-8 rounded-full border-2 border-[#101b19] object-cover" src="https://randomuser.me/api/portraits/men/46.jpg" alt="Client" />
           <img className="w-8 h-8 rounded-full border-2 border-[#101b19] object-cover" src="https://randomuser.me/api/portraits/men/22.jpg" alt="Client" />
         </div>
-        <span className="text-[14px] leading-[20px] font-mono tracking-widest font-semibold uppercase text-white">Trusted by 50+ scaling businesses</span>
+        <span className="text-[12px] sm:text-[14px] leading-[20px] font-mono tracking-widest font-semibold uppercase text-white">Trusted by 50+ scaling businesses</span>
       </div>
       
-      <h1 className="font-heading text-[62px] leading-[60px] font-bold tracking-tight mb-6 text-white">
-        Elite AI Operations to <br/>
+      <h1 className="font-heading text-4xl sm:text-5xl md:text-[62px] leading-tight md:leading-[60px] font-bold tracking-tight mb-6 text-white">
+        Elite AI Operations to <br className="hidden sm:block" />
         <span className="text-[#4ade80]">Scale Effortlessly</span>
       </h1>
       
-      <p className="text-[18px] leading-[28px] text-white/90 max-w-3xl mx-auto mb-6">
+      <p className="text-base sm:text-[18px] leading-relaxed md:leading-[28px] text-white/90 max-w-3xl mx-auto mb-6 px-2">
         1 Click Outcome handles complex backend automations so you can focus on closing deals. <br className="hidden md:block" /> 
         We turn missed opportunities into booked appointments without your team lifting a finger.
       </p>
 
       <div className="w-full max-w-[90%] mx-auto h-[2px] mb-8 bg-[repeating-linear-gradient(90deg,transparent,transparent_6px,rgba(255,255,255,0.3)_6px,rgba(255,255,255,0.3)_8px)]" style={{ maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)' }}></div>
 
-      <div className="flex flex-wrap justify-center items-center gap-6 text-[13px] font-mono font-semibold uppercase tracking-widest text-white/90 mb-8">
+      <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6 text-[11px] sm:text-[13px] font-mono font-semibold uppercase tracking-widest text-white/90 mb-8">
         <div className="flex items-center gap-2">
-          <div className="flex items-center justify-center bg-white text-background rounded-full w-[18px] h-[18px]">
-            <Icon icon="lucide:check" className="text-[12px]" strokeWidth="4" />
+          <div className="flex items-center justify-center bg-white text-background rounded-full w-[16px] h-[16px] sm:w-[18px] sm:h-[18px]">
+            <Icon icon="lucide:check" className="text-[10px] sm:text-[12px]" strokeWidth="4" />
           </div>
           <span>24/7 AI Receptionist</span>
         </div>
-        <span className="text-white/40">/</span>
+        <span className="text-white/40 hidden sm:inline">/</span>
         <div className="flex items-center gap-2">
-          <Icon icon="lucide:refresh-cw" className="text-white text-[18px]" strokeWidth="2.5" />
+          <Icon icon="lucide:refresh-cw" className="text-white text-[16px] sm:text-[18px]" strokeWidth="2.5" />
           <span>Lead Reactivation</span>
         </div>
-        <span className="text-white/40">/</span>
+        <span className="text-white/40 hidden sm:inline">/</span>
         <div className="flex items-center gap-2">
-          <Icon icon="lucide:users" className="text-white text-[18px]" strokeWidth="2.5" />
+          <Icon icon="lucide:users" className="text-white text-[16px] sm:text-[18px]" strokeWidth="2.5" />
           <span>Referral Automation</span>
         </div>
       </div>

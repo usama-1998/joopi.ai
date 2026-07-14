@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 
 export const Navigation: React.FC<{
   selectedLanguage: string;
   onLanguageChange: () => void;
 }> = ({ selectedLanguage, onLanguageChange }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <>
       <style>{`
         .header-px {
-          padding-left: calc(var(--pattern-w, 30px) + 2rem);
-          padding-right: calc(var(--pattern-w, 30px) + 2rem);
+          padding-left: calc(var(--pattern-w, 6px) + 1.2rem);
+          padding-right: calc(var(--pattern-w, 6px) + 1.2rem);
         }
-        .header-line-l { left: 30px; }
-        .header-line-r { right: 30px; }
+        .header-line-l { left: 6px; }
+        .header-line-r { right: 6px; }
         
         @media (min-width: 768px) { 
-          .header-px { --pattern-w: 38px; }
+          .header-px { --pattern-w: 38px; padding-left: calc(var(--pattern-w) + 2rem); padding-right: calc(var(--pattern-w) + 2rem); }
           .header-line-l { left: 38px; } 
           .header-line-r { right: 38px; } 
         }
@@ -82,13 +84,35 @@ export const Navigation: React.FC<{
             <div className="hidden sm:block w-px h-5 bg-[#31403E] mx-7"></div>
             
             {/* Auth Buttons */}
-            <a href="#login" className="text-[13.5px] font-bold text-white hover:text-white/80 transition-colors mr-7">Client Login</a>
-            <a href="#demo" className="bg-white text-black hover:bg-gray-100 text-[13.5px] font-bold px-5 py-2.5 rounded-full transition-all flex items-center gap-1">
+            <a href="#login" className="hidden md:block text-[13.5px] font-bold text-white hover:text-white/80 transition-colors mr-7">Client Login</a>
+            <a href="#demo" className="bg-white text-black hover:bg-gray-100 text-[13.5px] font-bold px-5 py-2.5 rounded-full transition-all hidden sm:flex items-center gap-1">
               Book Strategy Call <span className="text-[9px] ml-0.5">▶</span>
             </a>
+            <a href="#demo" className="bg-white text-black hover:bg-gray-100 text-[12px] font-bold px-4 py-2 rounded-full transition-all sm:hidden flex items-center gap-1 ml-4">
+              Book Call
+            </a>
+
+            {/* Mobile Menu Toggle */}
+            <button 
+              className="lg:hidden ml-4 text-white hover:text-white/80 transition-colors"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <Icon icon={isMobileMenuOpen ? "lucide:x" : "lucide:menu"} className="text-2xl" />
+            </button>
           </div>
           
         </div>
+
+        {/* Mobile Dropdown Menu */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden absolute top-[72px] left-0 right-0 bg-[#14221F] border-b border-[#31403E] px-6 py-4 flex flex-col gap-4 shadow-xl animate-in slide-in-from-top-2">
+            <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#4ade80] transition-colors py-2 border-b border-white/5">Services</a>
+            <a href="#case-studies" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#4ade80] transition-colors py-2 border-b border-white/5">Case Studies</a>
+            <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#4ade80] transition-colors py-2 border-b border-white/5">Pricing</a>
+            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#4ade80] transition-colors py-2 border-b border-white/5">Contact</a>
+            <a href="#login" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#4ade80] transition-colors py-2 md:hidden">Client Login</a>
+          </div>
+        )}
       </nav>
       <div className="h-[72px] w-full"></div>
     </>
