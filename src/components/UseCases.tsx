@@ -176,7 +176,7 @@ export const UseCases: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {cases.map((c, idx) => (
-            <UseCaseCard key={idx} title={c.title} description={c.description} visual={c.visual} />
+            <UseCaseCard key={idx} title={c.title} outcome={c.outcome} description={c.description} visual={c.visual} />
           ))}
         </div>
 
