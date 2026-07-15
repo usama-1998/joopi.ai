@@ -24,19 +24,19 @@ const UseCaseCard: React.FC<UseCaseData> = ({ title, outcome, description, visua
         <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500 rounded-2xl pointer-events-none"></div>
       </div>
       <div className="pr-4 flex flex-col items-start">
-        {/* Outcome Badge (Above Title) */}
-        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20 mb-3 w-fit">
+        <h3 className="font-mono text-[13px] uppercase font-semibold text-white/90 mb-3 leading-relaxed tracking-widest group-hover:text-primary transition-colors">
+          {title}
+        </h3>
+        <p className="text-[15px] text-white/60 leading-relaxed mb-4">
+          {description}
+        </p>
+        {/* Outcome Badge (Below Description) */}
+        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20 mt-1 w-fit">
           <Icon icon="lucide:trending-up" className="text-primary text-[12px] shrink-0" />
           <span className="text-[11.5px] font-bold text-primary tracking-wide leading-tight">
             {outcome}
           </span>
         </div>
-        <h3 className="font-mono text-[13px] uppercase font-semibold text-white/90 mb-3 leading-relaxed tracking-widest group-hover:text-primary transition-colors">
-          {title}
-        </h3>
-        <p className="text-[15px] text-white/60 leading-relaxed">
-          {description}
-        </p>
       </div>
     </div>
   );
