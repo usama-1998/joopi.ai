@@ -96,7 +96,7 @@ export const UseCases: React.FC = () => {
     {
       title: "Referral Automation",
       outcome: "5+ Weekly 5-Star Reviews",
-      description: "Engage your satisfied customers automatically. Our systems prompt happy clients to refer others, driving consistent, high-quality organic growth right to your doorstep.",
+      description: "Engage satisfied customers automatically. Our systems prompt happy clients to refer others, driving consistent organic growth.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full">
           {/* Glowing aura */}
@@ -130,7 +130,7 @@ export const UseCases: React.FC = () => {
     {
       title: "Custom Backend Automations",
       outcome: "15+ Hours Saved/Week",
-      description: "Say goodbye to manual data entry and task juggling. We integrate cutting-edge AI directly into your CRM and tools to put your operations on autopilot.",
+      description: "Say goodbye to manual data entry. We integrate cutting-edge AI into your CRM to put operations on autopilot.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full">
           {/* Glowing aura */}
