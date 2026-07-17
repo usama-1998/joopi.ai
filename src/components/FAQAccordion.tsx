@@ -8,32 +8,32 @@ export const FAQAccordion: React.FC<{
 }> = ({ activeFaqIndex, onToggleFaq }) => {
   const faqs: FAQItem[] = [
     {
-      question: "What exactly is 1 Click Outcome?",
-      answer: "We are an elite AI operations agency that builds, deploys, and manages intelligent automation ecosystems for your business. We handle things like AI Receptionists, Lead Reactivation, and CRM integrations so you can focus on sales."
+      question: "What exactly is Joopi AI?",
+      answer: "Joopi AI provides AI-powered sales agents—Alex for voice calls and Jennifer for SMS. They act as an extension of your sales team, handling leads 24/7, qualifying them, and booking meetings directly into your CRM."
     },
     {
-      question: "How does the AI Receptionist work?",
-      answer: "When a prospect calls your business and you miss it, our AI instantly sends them a text. It engages them in a natural, human-like conversation to answer their questions, qualify them, and book them directly onto your calendar."
+      question: "How does Alex, the Voice Agent, work?",
+      answer: "Alex handles inbound and outbound calls flawlessly. He engages prospects in a natural, human-like conversation to answer their questions, handle standard objections, and book them directly onto your calendar."
     },
     {
-      question: "Do I have to build the automations myself?",
-      answer: "Not at all. We are a fully managed service. Our expert team maps out your strategy, builds the automations, integrates them with your existing tools, and monitors them 24/7."
+      question: "Do I have to set this up myself?",
+      answer: "Not at all. We provide a completely done-for-you setup. Our expert team maps out your sales strategy, trains the AI agents on your business, integrates them with your CRM, and monitors them 24/7."
     },
     {
-      question: "Will this integrate with my current CRM?",
-      answer: "Yes, we integrate seamlessly with major CRMs including GoHighLevel, HubSpot, Salesforce, Pipedrive, and hundreds of other tools via Zapier and custom APIs."
+      question: "Will this integrate with my CRM?",
+      answer: "Yes, our agents sync seamlessly with major CRMs including HubSpot, Salesforce, and Close. Leads, appointments, and call transcripts are logged automatically."
     },
     {
-      question: "What is Lead Reactivation?",
-      answer: "Lead Reactivation is a process where we take your old, dead, or dormant leads and send them an intelligent SMS or email sequence to reignite their interest and book them for a call."
+      question: "How does Jennifer, the SMS Agent, work?",
+      answer: "Jennifer is designed for instant text engagement. Whether it's an inbound lead from your website or an outbound re-engagement campaign, Jennifer qualifies them via SMS and secures the meeting."
     },
     {
       question: "How long does it take to see results?",
-      answer: "Most of our clients see new appointments booked within the first 48 hours of deploying a Lead Reactivation campaign, and immediate ROI from the AI Receptionist intercepting missed calls."
+      answer: "Because we handle the setup, most clients see their AI agents taking calls and booking new appointments within days of going live."
     },
     {
-      question: "Do you offer custom backend automations?",
-      answer: "Absolutely. Whether it's complex onboarding sequences, billing reminders, or operational data flow, we can build custom AI-driven workflows tailored to your specific bottlenecks."
+      question: "How much does Joopi AI cost?",
+      answer: "We offer plans tailored to your scale. Pricing starts at $299/mo for early access, up to fully custom Enterprise plans depending on your call volume and CRM complexity."
     },
     {
       question: "How do we get started?",

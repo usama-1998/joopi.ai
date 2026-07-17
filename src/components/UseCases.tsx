@@ -45,115 +45,145 @@ const UseCaseCard: React.FC<UseCaseData> = ({ title, outcome, description, visua
 export const UseCases: React.FC = () => {
   const cases: UseCaseData[] = [
     {
-      title: "24/7 AI Receptionist",
-      outcome: "18% Revenue Boost",
-      description: "Our AI ensures no inbound call or inquiry ever goes unanswered. It engages, qualifies, and books appointments while you sleep.",
+      title: "Alex: AI Voice Agent",
+      outcome: "24/7 Call Coverage",
+      description: "Alex handles inbound and outbound calls flawlessly. He qualifies leads, handles objections, and books meetings directly into your reps' calendars.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full">
           {/* Glowing aura */}
-          <div className="absolute w-24 h-24 bg-primary/20 rounded-full blur-xl group-hover:bg-primary/40 transition-colors"></div>
-          {/* Phone Frame */}
-          <div className="relative w-20 h-32 border-2 border-white/20 rounded-[20px] bg-background/50 backdrop-blur-sm p-1.5 flex flex-col items-center">
-            <div className="w-6 h-1 rounded-full bg-white/20 mb-2 mt-1"></div>
-            {/* Chat bubbles */}
-            <div className="w-full flex flex-col gap-2 mt-1 px-1">
-               <div className="w-[80%] h-3 bg-white/10 rounded-r-lg rounded-bl-lg self-start"></div>
-               <div className="w-[70%] h-3 bg-primary/30 rounded-l-lg rounded-br-lg self-end relative">
-                 <Icon icon="lucide:bot" className="absolute -left-3 -bottom-1 text-[8px] text-primary" />
-               </div>
-               <div className="w-[60%] h-3 bg-primary/30 rounded-l-lg rounded-br-lg self-end mt-1"></div>
+          <div className="absolute w-24 h-24 bg-primary/20 rounded-full blur-xl group-hover:bg-primary/50 group-hover:scale-150 transition-all duration-700"></div>
+          
+          {/* Floating Particles */}
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+            <div className="absolute top-1/4 left-1/4 w-1.5 h-1.5 bg-primary rounded-full animate-[ping_2s_infinite]"></div>
+            <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-primary/60 rounded-full animate-[ping_3s_infinite_1s]"></div>
+            <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-white rounded-full animate-[ping_1.5s_infinite_0.5s]"></div>
+          </div>
+
+          {/* Audio Waves & Mic */}
+          <div className="relative flex items-center gap-2 group-hover:[transform:rotateX(10deg)_rotateY(-15deg)] transition-transform duration-700 [transform-style:preserve-3d]">
+            <div className="w-1.5 h-6 bg-primary/40 rounded-full group-hover:animate-[wave_0.8s_ease-in-out_infinite] group-hover:h-12 group-hover:bg-primary transition-all duration-300"></div>
+            <div className="w-1.5 h-10 bg-primary/60 rounded-full group-hover:animate-[wave_1s_ease-in-out_infinite] group-hover:h-16 group-hover:bg-primary transition-all duration-300 delay-75"></div>
+            <div className="relative w-16 h-16 rounded-full bg-background/80 backdrop-blur-sm border-2 border-primary/50 flex items-center justify-center z-10 shadow-[0_0_20px_rgba(74,222,128,0.2)] group-hover:border-primary group-hover:shadow-[0_0_40px_rgba(74,222,128,0.6)] transition-all duration-500 group-hover:scale-110">
+              <Icon icon="lucide:mic" className="text-primary text-3xl group-hover:text-white transition-colors" />
+              {/* Outer rotating ring */}
+              <div className="absolute inset-[-8px] border border-dashed border-primary/30 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-[spin_4s_linear_infinite] transition-opacity"></div>
             </div>
-            {/* Call button */}
-            <div className="absolute bottom-3 w-8 h-8 rounded-full bg-green-500/20 border border-green-500/50 flex items-center justify-center group-hover:scale-110 transition-transform">
-               <Icon icon="lucide:phone-incoming" className="text-green-400 text-sm animate-pulse" />
+            <div className="w-1.5 h-10 bg-primary/60 rounded-full group-hover:animate-[wave_0.9s_ease-in-out_infinite] group-hover:h-16 group-hover:bg-primary transition-all duration-300 delay-100"></div>
+            <div className="w-1.5 h-6 bg-primary/40 rounded-full group-hover:animate-[wave_1.1s_ease-in-out_infinite] group-hover:h-12 group-hover:bg-primary transition-all duration-300 delay-150"></div>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Jennifer: AI SMS Agent",
+      outcome: "Instant Engagement",
+      description: "Jennifer engages leads instantly via SMS, answering their questions, qualifying them, and scheduling appointments without any human intervention.",
+      visual: (
+        <div className="relative flex items-center justify-center w-full h-full perspective-[800px]">
+          {/* Glowing aura */}
+          <div className="absolute w-24 h-24 bg-blue-500/10 rounded-full blur-xl group-hover:bg-blue-500/40 group-hover:scale-150 transition-all duration-700"></div>
+          
+          {/* Smartphone SMS View */}
+          <div className="relative w-24 h-36 border-2 border-white/20 rounded-[20px] bg-background/50 backdrop-blur-sm p-2 flex flex-col group-hover:[transform:rotateY(-15deg)_rotateX(5deg)] transition-transform duration-700 [transform-style:preserve-3d] shadow-2xl">
+            <div className="w-8 h-1 rounded-full bg-white/20 mx-auto mb-2 mt-0.5"></div>
+            
+            {/* SMS Conversation */}
+            <div className="w-full flex flex-col gap-2 mt-1 relative z-10">
+               <div className="w-[85%] h-4 bg-blue-500/30 rounded-xl rounded-tr-sm self-end flex items-center px-1.5 overflow-hidden group-hover:bg-blue-500/60 transition-colors">
+                 <div className="w-2/3 h-1 bg-white/60 rounded-full"></div>
+               </div>
+               <div className="w-[85%] h-4 bg-white/10 rounded-xl rounded-tl-sm self-start flex items-center px-1.5 border border-white/5">
+                 <div className="w-1/2 h-1 bg-white/40 rounded-full"></div>
+               </div>
+               
+               {/* Animated Typing Indicator (Hover only) */}
+               <div className="w-[60%] h-4 bg-blue-500/30 rounded-xl rounded-tr-sm self-end flex items-center px-2 gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-300">
+                  <div className="w-1 h-1 bg-white rounded-full animate-bounce"></div>
+                  <div className="w-1 h-1 bg-white rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
+                  <div className="w-1 h-1 bg-white rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+               </div>
+               
+               {/* 3D Floating Action Button */}
+               <div className="absolute -bottom-2 -right-2 w-7 h-7 rounded-full bg-blue-500 flex items-center justify-center shadow-[0_5px_15px_rgba(59,130,246,0.5)] group-hover:[transform:translateZ(20px)_scale(1.2)] transition-all duration-500">
+                 <Icon icon="lucide:check-check" className="text-white text-[12px]" strokeWidth="3" />
+               </div>
             </div>
           </div>
         </div>
       )
     },
     {
-      title: "Intelligent Lead Reactivation",
-      outcome: "30% More Appointments",
-      description: "We deploy automated campaigns to wake up your dormant contacts, turning cold lists and old leads into instant, measurable revenue.",
+      title: "Automated Objection Handling",
+      outcome: "Higher Conversion Rates",
+      description: "Our agents are trained to overcome standard sales objections gracefully, ensuring more prospects make it to a booked meeting.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full">
           {/* Glowing aura */}
-          <div className="absolute w-24 h-24 bg-orange-500/10 rounded-full blur-xl group-hover:bg-orange-500/30 transition-colors"></div>
-          {/* Database Stack */}
-          <div className="relative flex flex-col gap-1.5 items-center w-24">
-             <div className="w-full h-6 border-2 border-white/10 bg-white/5 rounded-[50%] flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div className="absolute w-24 h-24 bg-yellow-500/10 rounded-full blur-xl group-hover:bg-yellow-500/40 group-hover:scale-150 transition-all duration-700"></div>
+          
+          {/* Shield & Deflection */}
+          <div className="relative w-32 h-32 flex items-center justify-center">
+             
+             {/* Dynamic Rippling Energy Field */}
+             <div className="absolute inset-4 rounded-full border-2 border-yellow-500/0 group-hover:border-yellow-500/30 group-hover:animate-[ping_2s_infinite] transition-colors"></div>
+             <div className="absolute inset-2 rounded-full border border-yellow-500/0 group-hover:border-yellow-500/20 group-hover:animate-[ping_2s_infinite_0.5s] transition-colors"></div>
+             
+             <Icon icon="lucide:shield-check" className="absolute text-yellow-500 text-5xl z-20 group-hover:scale-125 transition-transform duration-500 drop-shadow-[0_0_20px_rgba(234,179,8,0.8)]" />
+             
+             {/* Incoming Objections */}
+             <div className="absolute top-2 left-0 w-7 h-7 border border-red-500/50 bg-red-500/10 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:translate-x-8 group-hover:translate-y-6 group-hover:opacity-0 group-hover:scale-50 transition-all duration-700">
+               <Icon icon="lucide:x" className="text-red-500 text-sm" />
              </div>
-             <div className="w-full h-6 border-2 border-white/10 bg-white/5 rounded-[50%] relative -mt-4 flex items-center justify-center z-10 overflow-hidden">
-                <div className="absolute inset-0 bg-orange-500/40 opacity-0 group-hover:opacity-100 transition-opacity delay-75"></div>
+             <div className="absolute bottom-2 left-0 w-7 h-7 border border-red-500/50 bg-red-500/10 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:translate-x-8 group-hover:-translate-y-6 group-hover:opacity-0 group-hover:scale-50 transition-all duration-700 delay-100">
+               <Icon icon="lucide:x" className="text-red-500 text-sm" />
              </div>
-             <div className="w-full h-6 border-2 border-orange-500/50 bg-orange-500/10 rounded-[50%] relative -mt-4 flex items-center justify-center z-20">
-                <Icon icon="lucide:zap" className="absolute -top-6 text-orange-400 text-3xl drop-shadow-[0_0_8px_rgba(249,115,22,0.8)] group-hover:-translate-y-2 group-hover:scale-125 transition-all duration-500" fill="currentColor" />
+             
+             {/* Outgoing Conversions (Now shooting outwards) */}
+             <div className="absolute top-1/2 right-4 -translate-y-1/2 w-6 h-6 border border-green-500/50 bg-green-500/20 rounded-full flex items-center justify-center opacity-0 group-hover:translate-x-12 group-hover:opacity-100 group-hover:scale-125 transition-all duration-700 delay-300">
+               <Icon icon="lucide:check" className="text-green-500 text-xs" />
+             </div>
+             <div className="absolute top-1/4 right-6 w-5 h-5 border border-green-500/50 bg-green-500/20 rounded-full flex items-center justify-center opacity-0 group-hover:translate-x-8 group-hover:-translate-y-4 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 delay-500">
+               <Icon icon="lucide:check" className="text-green-500 text-[10px]" />
              </div>
           </div>
         </div>
       )
     },
     {
-      title: "Referral Automation",
-      outcome: "5+ Weekly 5-Star Reviews",
-      description: "Engage satisfied customers automatically. Our systems prompt happy clients to refer others, driving consistent organic growth.",
+      title: "Direct CRM Integration",
+      outcome: "Done-For-You Setup",
+      description: "Everything syncs directly to HubSpot, Salesforce, Close, and more. We build and manage the entire infrastructure so you don't have to lift a finger.",
       visual: (
-        <div className="relative flex items-center justify-center w-full h-full">
+        <div className="relative flex items-center justify-center w-full h-full perspective-[800px]">
           {/* Glowing aura */}
-          <div className="absolute w-24 h-24 bg-yellow-500/10 rounded-full blur-xl group-hover:bg-yellow-500/30 transition-colors"></div>
-          {/* Nodes */}
-          <div className="relative w-32 h-32">
-             {/* Center Node */}
-             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 border border-white/20 rounded-full flex items-center justify-center z-10 backdrop-blur-sm">
-                <Icon icon="lucide:star" className="text-yellow-400 text-xl group-hover:rotate-[72deg] transition-transform duration-700" fill="currentColor" />
-             </div>
-             {/* Branch Nodes */}
-             <div className="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-8 bg-white/5 border border-white/10 rounded-full flex items-center justify-center">
-                <Icon icon="lucide:user" className="text-white/50 text-xs" />
-             </div>
-             <div className="absolute bottom-4 left-4 w-8 h-8 bg-white/5 border border-white/10 rounded-full flex items-center justify-center">
-                <Icon icon="lucide:user" className="text-white/50 text-xs" />
-             </div>
-             <div className="absolute bottom-4 right-4 w-8 h-8 bg-white/5 border border-white/10 rounded-full flex items-center justify-center">
-                <Icon icon="lucide:user" className="text-white/50 text-xs" />
-             </div>
-             {/* Connecting Lines */}
-             <svg className="absolute inset-0 w-full h-full pointer-events-none stroke-white/20 group-hover:stroke-yellow-400/50 transition-colors" fill="none" strokeWidth="1.5">
-                <path d="M 64 36 L 64 64" strokeDasharray="4 4" className="group-hover:animate-[dash_1s_linear_infinite]" />
-                <path d="M 36 84 L 64 64" strokeDasharray="4 4" className="group-hover:animate-[dash_1s_linear_infinite]" />
-                <path d="M 92 84 L 64 64" strokeDasharray="4 4" className="group-hover:animate-[dash_1s_linear_infinite]" />
-             </svg>
-          </div>
-        </div>
-      )
-    },
-    {
-      title: "Custom Backend Automations",
-      outcome: "15+ Hours Saved/Week",
-      description: "Say goodbye to manual data entry and task juggling. We integrate cutting-edge AI into your CRM to put operations on autopilot.",
-      visual: (
-        <div className="relative flex items-center justify-center w-full h-full">
-          {/* Glowing aura */}
-          <div className="absolute w-24 h-24 bg-blue-500/10 rounded-full blur-xl group-hover:bg-blue-500/30 transition-colors"></div>
-          {/* Cogs & Window */}
-          <div className="relative">
-            <div className="w-24 h-16 border border-white/20 bg-background/80 backdrop-blur-sm rounded-lg p-2 shadow-lg z-10 relative group-hover:-translate-y-1 transition-transform">
-               <div className="flex items-center gap-1 mb-2">
-                 <div className="w-1.5 h-1.5 rounded-full bg-red-400"></div>
-                 <div className="w-1.5 h-1.5 rounded-full bg-yellow-400"></div>
-                 <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div>
-               </div>
-               <div className="w-full h-1 bg-white/10 rounded-full mb-1"></div>
-               <div className="w-2/3 h-1 bg-white/10 rounded-full mb-2"></div>
-               <div className="flex gap-1 mt-3">
-                 <div className="w-1/3 h-3 bg-blue-500/20 rounded-sm"></div>
-                 <div className="w-1/3 h-3 bg-purple-500/20 rounded-sm"></div>
-               </div>
+          <div className="absolute w-24 h-24 bg-purple-500/10 rounded-full blur-xl group-hover:bg-purple-500/40 group-hover:scale-150 transition-all duration-700"></div>
+          
+          {/* CRM Pipeline */}
+          <div className="relative w-40 h-32 flex items-center justify-between px-2 group-hover:[transform:rotateY(15deg)] transition-transform duration-700 [transform-style:preserve-3d]">
+            
+            {/* Orbital Rings */}
+            <div className="absolute left-6 top-1/2 -translate-y-1/2 w-16 h-16 border border-dashed border-primary/30 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-[spin_6s_linear_infinite] transition-opacity"></div>
+            
+            {/* Joopi Node */}
+            <div className="w-12 h-12 rounded-full bg-background border-2 border-primary/50 flex items-center justify-center z-20 shadow-[0_0_15px_rgba(74,222,128,0.3)] group-hover:scale-125 group-hover:border-primary group-hover:shadow-[0_0_30px_rgba(74,222,128,0.6)] transition-all duration-500 relative bg-[#101b19]">
+              <span className="font-black text-primary text-lg font-heading">J</span>
             </div>
-            {/* Spinning Cogs */}
-            <Icon icon="lucide:settings" className="absolute -top-4 -right-4 text-blue-400/50 text-3xl group-hover:animate-[spin_4s_linear_infinite] -z-0" />
-            <Icon icon="lucide:settings" className="absolute -bottom-3 -left-3 text-purple-400/50 text-2xl group-hover:animate-[spin_4s_linear_reverse_infinite] z-20" />
+            
+            {/* Pipeline Stream */}
+            <div className="absolute left-14 right-12 h-1 bg-white/10 top-1/2 -translate-y-1/2 z-10 overflow-hidden rounded-full">
+               <div className="w-full h-full bg-gradient-to-r from-primary via-purple-500 to-blue-500 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite_linear]"></div>
+            </div>
+            
+            {/* CRM Nodes */}
+            <div className="flex flex-col gap-5 z-20">
+              <div className="w-10 h-10 rounded-xl border border-white/20 bg-background/80 backdrop-blur-sm flex items-center justify-center group-hover:border-purple-500 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] group-hover:-translate-y-2 group-hover:[transform:translateZ(10px)] transition-all duration-500">
+                 <Icon icon="lucide:database" className="text-white/50 group-hover:text-purple-400 text-sm transition-colors" />
+              </div>
+              <div className="w-10 h-10 rounded-xl border border-white/20 bg-background/80 backdrop-blur-sm flex items-center justify-center group-hover:border-blue-500 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] group-hover:translate-y-2 group-hover:[transform:translateZ(10px)] transition-all duration-500 delay-75">
+                 <Icon icon="lucide:calendar" className="text-white/50 group-hover:text-blue-400 text-sm transition-colors" />
+              </div>
+            </div>
           </div>
         </div>
       )
@@ -167,13 +197,13 @@ export const UseCases: React.FC = () => {
           <div className="max-w-2xl">
             <p className="font-mono text-[13px] font-semibold uppercase tracking-widest text-white/60 mb-4 lg:mb-6">Our Services</p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-[44px] font-bold leading-[1.15] text-white tracking-tight">
-              Fully Managed Ecosystem<br/>
-              Built For Scale.
+              AI Sales Agents<br/>
+              Working 24/7.
             </h2>
           </div>
           <div className="lg:w-[480px] lg:pt-14">
             <p className="text-[15px] md:text-[16px] text-white/80 leading-relaxed">
-              We handle the complex backend automations so you can focus entirely on closing deals and driving revenue. From missed calls to dormant leads, we turn gaps into growth.
+              We handle the entire setup and integration of your AI sales agents. Alex and Jennifer work around the clock to qualify leads and book meetings, so your human reps can focus entirely on closing deals.
             </p>
           </div>
         </div>

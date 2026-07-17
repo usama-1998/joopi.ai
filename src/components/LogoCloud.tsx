@@ -5,7 +5,7 @@ export const LogoCloud: React.FC = () => {
     <section className="py-16 border-b border-border bg-card/40">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-8">
-          Discover how hundreds of businesses scale with 1 Click Outcome
+          Discover how hundreds of businesses scale with Joopi AI
         </p>
         <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-75">
           {/* We keep the same logos as requested "don't create remove any new design elements" */}

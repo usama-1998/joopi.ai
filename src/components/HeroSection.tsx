@@ -4,25 +4,47 @@ import { Icon } from '@iconify/react';
 export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFreeClick }) => {
   return (
     <div className="max-w-4xl mx-auto text-center relative z-10 pt-8 px-4">
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 mb-8">
-        <div className="flex -space-x-3">
-          <img className="w-8 h-8 rounded-full border-2 border-[#101b19] object-cover" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" />
-          <img className="w-8 h-8 rounded-full border-2 border-[#101b19] object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" />
-          <img className="w-8 h-8 rounded-full border-2 border-[#101b19] object-cover" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client" />
-          <img className="w-8 h-8 rounded-full border-2 border-[#101b19] object-cover" src="https://randomuser.me/api/portraits/men/46.jpg" alt="Client" />
-          <img className="w-8 h-8 rounded-full border-2 border-[#101b19] object-cover" src="https://randomuser.me/api/portraits/men/22.jpg" alt="Client" />
+
+      <div className="flex flex-col justify-center items-center mb-10 transform scale-90 sm:scale-100">
+        <div className="relative flex items-center justify-center w-36 h-36 group perspective-1000">
+          {/* Outer glow */}
+          <div className="absolute inset-0 bg-primary/10 rounded-full blur-[40px] group-hover:bg-primary/30 transition-colors duration-1000"></div>
+          
+          {/* Outer Orbital Ring (Slow) */}
+          <div className="absolute inset-0 border border-primary/20 rounded-full animate-[spin_12s_linear_infinite] group-hover:border-primary/40 transition-colors duration-700 shadow-[inset_0_0_15px_rgba(74,222,128,0.1)]">
+          </div>
+
+          {/* Inner Orbital Ring (Fast Reverse) */}
+          <div className="absolute inset-5 border-[2px] border-dashed border-primary/20 rounded-full animate-[spin_8s_linear_reverse_infinite] group-hover:border-primary/50 transition-colors duration-700">
+          </div>
+          
+          {/* Middle Decorative Ring */}
+          <div className="absolute inset-10 border border-white/5 rounded-full animate-[spin_20s_linear_infinite]">
+            <div className="absolute top-1/2 -left-1 w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_rgba(74,222,128,0.8)]"></div>
+            <div className="absolute top-1/2 -right-1 w-2 h-2 bg-blue-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.8)]"></div>
+          </div>
+
+          {/* Core Orb */}
+          <div className="relative w-[72px] h-[72px] bg-gradient-to-br from-primary via-green-500 to-green-700 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(74,222,128,0.6)] z-10 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(74,222,128,0.8)] transition-all duration-500 transform-style-3d">
+            <div className="absolute inset-1 bg-black/20 rounded-full blur-[2px]"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.4),transparent)] rounded-full"></div>
+            <Icon icon="lucide:mic" className="text-white text-3xl relative z-10 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:animate-pulse" />
+          </div>
+
+
         </div>
-        <span className="text-[12px] sm:text-[14px] leading-[20px] font-mono tracking-widest font-semibold uppercase text-white">Trusted by 50+ scaling businesses</span>
+
+
       </div>
       
       <h1 className="font-heading text-4xl sm:text-5xl md:text-[62px] leading-tight md:leading-[60px] font-bold tracking-tight mb-6 text-white">
-        Elite AI Operations to <br className="hidden sm:block" />
+        AI-Powered Sales Agents to <br className="hidden sm:block" />
         <span className="text-[#4ade80]">Scale Effortlessly</span>
       </h1>
       
       <p className="text-base sm:text-[18px] leading-relaxed md:leading-[28px] text-white/90 max-w-3xl mx-auto mb-6 px-2">
-        1 Click Outcome handles complex backend automations so you can focus on closing deals. <br className="hidden md:block" /> 
-        We turn missed opportunities into booked appointments without your team lifting a finger.
+        Joopi AI's agents, Alex (voice) and Jennifer (SMS), handle your leads 24/7. <br className="hidden md:block" /> 
+        They qualify leads, handle objections, and book meetings directly into your reps' calendars.
       </p>
 
       <div className="w-full max-w-[90%] mx-auto h-[2px] mb-8 bg-[repeating-linear-gradient(90deg,transparent,transparent_6px,rgba(255,255,255,0.3)_6px,rgba(255,255,255,0.3)_8px)]" style={{ maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)' }}></div>
@@ -32,17 +54,17 @@ export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFre
           <div className="flex items-center justify-center bg-white text-background rounded-full w-[16px] h-[16px] sm:w-[18px] sm:h-[18px]">
             <Icon icon="lucide:check" className="text-[10px] sm:text-[12px]" strokeWidth="4" />
           </div>
-          <span>24/7 AI Receptionist</span>
+          <span>24/7 Lead Response</span>
         </div>
         <span className="text-white/40 hidden sm:inline">/</span>
         <div className="flex items-center gap-2">
           <Icon icon="lucide:refresh-cw" className="text-white text-[16px] sm:text-[18px]" strokeWidth="2.5" />
-          <span>Lead Reactivation</span>
+          <span>Objection Handling</span>
         </div>
         <span className="text-white/40 hidden sm:inline">/</span>
         <div className="flex items-center gap-2">
           <Icon icon="lucide:users" className="text-white text-[16px] sm:text-[18px]" strokeWidth="2.5" />
-          <span>Referral Automation</span>
+          <span>Meeting Booking</span>
         </div>
       </div>
 

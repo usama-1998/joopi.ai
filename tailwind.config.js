@@ -47,6 +47,34 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         heading: ['Inter', 'system-ui', 'sans-serif'],
       },
+      keyframes: {
+        wave: {
+          '0%': { transform: 'scaleY(0.5)' },
+          '100%': { transform: 'scaleY(1.5)' },
+        },
+        equalizer: {
+          '0%': { transform: 'scaleY(0.3)' },
+          '100%': { transform: 'scaleY(1)' },
+        },
+        slideInLeft: {
+          '0%': { opacity: '0', transform: 'translateX(-20px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideInRight: {
+          '0%': { opacity: '0', transform: 'translateX(20px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        shimmer: {
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
+      animation: {
+        wave: 'wave 1s ease-in-out infinite alternate',
+        equalizer: 'equalizer 0.8s ease-in-out infinite alternate',
+        slideInLeft: 'slideInLeft 0.5s ease-out forwards',
+        slideInRight: 'slideInRight 0.5s ease-out forwards',
+        shimmer: 'shimmer 1.5s infinite linear',
+      },
     },
   },
   plugins: [],

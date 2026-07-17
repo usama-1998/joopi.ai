@@ -3,7 +3,6 @@ import { Icon } from '@iconify/react';
 import type { FormField } from '../types';
 import { Navigation } from '../components/Navigation';
 import { HeroSection } from '../components/HeroSection';
-import { WorkspaceMockup } from '../components/WorkspaceMockup';
 import { LogoCloud } from '../components/LogoCloud';
 import { UseCases } from '../components/UseCases';
 import { ScrollingFeatures } from '../components/ScrollingFeatures';
@@ -16,56 +15,15 @@ import { Footer } from '../components/Footer';
 const Home: React.FC = () => {
   // State Variables
   const [selectedLanguage, setSelectedLanguage] = useState<string>("EN");
-  const [uploadedFile, setUploadedFile] = useState<File | null>(null);
-  const [isUploading, setIsUploading] = useState<boolean>(false);
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
-  
-  const [userProfile] = useState({
-    fullName: 'John Doe',
-    email: 'john@exampleagency.com',
-    companyName: 'Example Agency LLC',
-    taxId: 'Active Client'
-  });
-
-  const [mappedFields, setMappedFields] = useState<FormField[]>([
-    { id: '1', label: 'Campaign Status', value: 'Ready to Deploy' },
-  ]);
 
   // Event Handlers
   const handleLanguageChange = () => {
     setSelectedLanguage(prev => prev === "EN" ? "ES" : "EN");
   };
 
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      const file = e.target.files[0];
-      setUploadedFile(file);
-      setIsUploading(true);
-      
-      // Simulate AI mapping process
-      setTimeout(() => {
-        setIsUploading(false);
-      }, 1500);
-    }
-  };
-
-  const handleAutoFill = () => {
-    setIsUploading(true);
-    setTimeout(() => {
-      setIsUploading(false);
-    }, 1000);
-  };
-
-  const handleFieldChange = (id: string, value: string) => {
-    setMappedFields(prev => prev.map(field => field.id === id ? { ...field, value } : field));
-  };
-
   const toggleFaq = (index: number) => {
     setActiveFaqIndex(prev => prev === index ? null : index);
-  };
-
-  const handleExport = () => {
-    alert("Generating ROI report...");
   };
 
   const scrollToWorkspace = () => {
@@ -90,17 +48,6 @@ const Home: React.FC = () => {
         {/* Local decorative patterns moved to root */}
 
         <HeroSection onTryFreeClick={scrollToWorkspace} />
-
-        <WorkspaceMockup 
-          uploadedFile={uploadedFile}
-          isUploading={isUploading}
-          mappedFields={mappedFields}
-          userProfile={userProfile}
-          onFileUpload={handleFileUpload}
-          onAutoFill={handleAutoFill}
-          onFieldChange={handleFieldChange}
-          onExport={handleExport}
-        />
       </header>
 
       <LogoCloud />
@@ -142,13 +89,13 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className="text-center pt-8">
-            <button 
-              onClick={scrollToWorkspace}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full transition-all inline-flex items-center gap-2 cursor-pointer"
-            >
-              Start Scaling with 1 Click Outcome
-              <Icon icon="lucide:arrow-right" className="text-lg" />
-            </button>
+              <button 
+                onClick={scrollToWorkspace}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full transition-all inline-flex items-center gap-2 cursor-pointer"
+              >
+                Start Scaling with Joopi AI
+                <Icon icon="lucide:arrow-right" className="text-lg" />
+              </button>
           </div>
         </div>
       </section>

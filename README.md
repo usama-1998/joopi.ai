@@ -1,58 +1,57 @@
-# 1 Click Outcome | Elite AI Operations Agency
+# Joopi AI | AI-Powered Sales Agents
 
-Welcome to the **1 Click Outcome** frontend repository. This project is a modern, high-performance React web application built to showcase elite AI operations and backend automation services.
+Welcome to the **Joopi AI** frontend repository. This project is a modern, high-performance React web application built for Joopi AI's landing page and product showcase.
 
 ## 🚀 Overview
 
-1 Click Outcome is an agency focused on helping businesses scale effortlessly by handling complex backend automations. The landing page acts as an interactive portfolio and sales funnel, highlighting core offerings:
-- **24/7 AI Receptionist**: Live Missed Call Text Back demonstrations.
-- **Intelligent Lead Reactivation**: CRM pipeline visuals showing cold leads turning into booked appointments.
-- **Referral Automation**: Generating organic growth via automated Google Reviews.
-- **Custom Backend Automations**: Seamless integrations with Stripe, HubSpot, Zapier, and Calendly.
+Joopi AI is an AI startup that builds and deploys elite, round-the-clock sales agents to scale your operations effortlessly:
+- **"Alex" (Voice Agent)**: Handles outbound and inbound voice calls, handles objections, qualifies leads, and schedules meetings.
+- **"Jennifer" (SMS Agent)**: Fast, natural text message interactions to follow up, qualify leads, and secure bookings.
+- **Key Capabilities**:
+  - **24/7 Lead Response**: Instant follow-up for every lead, anytime.
+  - **Objection Handling**: Intelligent and context-aware responses to common sales hesitations.
+  - **Meeting Booking**: Automatically books qualified leads directly into your sales reps' calendars.
+  - **CRM Integration**: Seamlessly syncs data back to HubSpot, Salesforce, Close, and more.
 
 ## 🛠 Tech Stack
 
 - **Framework**: React 18
 - **Build Tool**: Vite
 - **Language**: TypeScript
-- **Styling**: Vanilla CSS (Tailwind compatible classes)
+- **Styling**: Vanilla CSS (Tailwind CSS utilized for custom layouts)
 - **Icons**: Iconify (`@iconify/react`)
 
 ## 📁 Project Structure
 
-The project has been carefully modularized for scalability and maintainability:
+The project is modularized for clean architecture and maintainability:
 
 ```
 src/
 ├── components/          # Reusable UI blocks and page sections
-│   ├── Navigation.tsx   # Top nav with custom responsive layout
-│   ├── HeroSection.tsx  # Main hero with CTA and features
-│   ├── WorkspaceMockup.tsx # Interactive Agency Operations Stream
-│   ├── LogoCloud.tsx    # Trusted clients section
-│   ├── UseCases.tsx     # Services grid with bespoke CSS-art visuals
-│   ├── ScrollingFeatures.tsx # Zig-zag layout with custom UI mockups
-│   ├── WorkflowSteps.tsx # 3-Phase agency process breakdown
-│   ├── Testimonial.tsx  # Interactive client success stories slider
+│   ├── Navigation.tsx   # Header with custom responsive menu & animated mic logo
+│   ├── HeroSection.tsx  # Main hero with CTA, features, and 3D AI Core graphic
+│   ├── LogoCloud.tsx    # Trusted clients and integrations section
+│   ├── UseCases.tsx     # Services grid with custom CSS visuals (Alex & Jennifer)
+│   ├── ScrollingFeatures.tsx # Zig-zag layout with custom interactive UI mockups
+│   ├── WorkflowSteps.tsx # 3-Phase agent deployment process breakdown
+│   ├── Testimonial.tsx  # Client success stories slider
 │   ├── FAQAccordion.tsx # Expandable questions section
-│   ├── PopularForms.tsx # Core capabilities grid
-│   └── Footer.tsx       # Mega footer with watermark
+│   └── Footer.tsx       # Mega footer with watermark & logo
 ├── pages/
-│   └── Home.tsx         # Main entry point orchestrating all components
+│   └── Home.tsx         # Main page orchestrator
 ├── types/
 │   └── index.ts         # Global TypeScript interfaces
-├── App.tsx              # React Router setup
-├── main.tsx             # React DOM rendering
-└── index.css            # Global CSS variables and tailwind directives
+├── App.tsx              # Application layout & Router setup
+├── main.tsx             # React DOM entry point
+└── index.css            # Custom styling, Tailwind directives, and keyframe animations
 ```
 
 ## 🎨 Design System & Aesthetics
 
-This project relies heavily on a premium, dark-mode-inspired aesthetic:
-- **Bespoke Visuals**: Over-reliance on generic icons is avoided. Instead, bespoke CSS-driven mockups (e.g., iPhone chat frames, CRM dashboards, glowing node graphs) are used to visualize complex AI operations.
-- **Outcome-Driven Copy**: Services and features are highlighted using direct, quantifiable business outcomes (e.g., "18% boost in new revenue") rather than just dense paragraphs.
-- **Glassmorphism**: Subtle translucent backgrounds (`backdrop-blur`) and glowing gradients (`shadow-[0_0_15px_...]`) are used to create depth.
-- **Custom Animations**: Includes continuous, buttery-smooth CSS hover animations (`animate-float-smooth`) crafted specifically for UI elements like the logo pointer.
-- **Responsive Clip-Paths**: Unique angled section dividers are implemented using CSS `clip-path` calculations synchronized with CSS variables across breakpoints.
+This application relies on a premium, dark-mode design:
+- **Bespoke Animations**: Custom CSS-driven 3D transforms, orbital ring paths, custom wave sweeps, and interactive hover states.
+- **Micro-interactions**: Subtle hover actions on the logo (spinning ring, pulsing icon), buttons, and card containers.
+- **Responsive Layout**: Native CSS styling engineered with Tailwind utility classes for high-performance responsiveness across all screen sizes.
 
 ## 🏃‍♂️ Running Locally
 
@@ -75,11 +74,8 @@ This project relies heavily on a premium, dark-mode-inspired aesthetic:
 ## 🚀 Deployment (Netlify)
 
 This project is configured for continuous deployment on Netlify.
-A `netlify.toml` file is included in the root directory to automatically handle build settings and client-side routing (SPAs):
-- **Build Command**: `npm run build`
-- **Publish Directory**: `dist`
-- **Redirects**: All traffic `/*` routes to `/index.html` to prevent 404s on page refresh.
+A `netlify.toml` file is included in the root directory to handle SPA redirects automatically.
 
 ## 📝 License
 
-© 2026 1 Click Outcome Agency · All rights reserved.
+© 2026 Joopi AI · All rights reserved.

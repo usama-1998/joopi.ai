@@ -27,18 +27,23 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-8">
           {/* Left Column: Brand & Copyright */}
           <div className="flex flex-col items-start gap-6 lg:gap-8 lg:w-1/3">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 group cursor-pointer">
               <div className="relative flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#4ade80] to-[#22c55e] rounded-[6px] transform rotate-6 opacity-40"></div>
-                <div className="bg-gradient-to-br from-[#4ade80] to-[#16a34a] text-[#0d1614] w-[22px] h-[22px] rounded-[5px] flex items-center justify-center font-black text-sm shadow-[0_0_10px_rgba(74,222,128,0.3)] relative z-10 border border-[#4ade80]/50">1</div>
-                <Icon icon="lucide:mouse-pointer-2" className="absolute -bottom-1 -right-1 text-foreground text-[12px] z-20 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] animate-float-smooth" strokeWidth="2.5" />
+                {/* Orbital Ring */}
+                <div className="absolute inset-[-3px] border border-dashed border-primary/30 rounded-full animate-[spin_8s_linear_infinite] group-hover:border-primary/60 transition-colors duration-500">
+                </div>
+                {/* Core Orb */}
+                <div className="bg-gradient-to-br from-primary via-green-500 to-green-700 w-[24px] h-[24px] rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(74,222,128,0.4)] group-hover:shadow-[0_0_15px_rgba(74,222,128,0.7)] relative z-10 transition-all duration-300 group-hover:scale-105">
+                  <div className="absolute inset-[1.5px] bg-black/20 rounded-full blur-[1px]"></div>
+                  <Icon icon="lucide:mic" className="text-white text-[13px] relative z-20 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)] group-hover:animate-pulse" />
+                </div>
               </div>
               <div className="flex flex-col justify-center">
-                <span className="font-heading font-black text-foreground text-[16px] tracking-tight leading-none mb-1">Click Outcome</span>
+                <span className="font-heading font-black text-foreground text-[16px] tracking-tight leading-none mb-1">Joopi AI</span>
               </div>
             </div>
             <p className="text-[13px] text-muted-foreground">
-              © 2026 1 Click Outcome Agency · All rights reserved.
+              © 2026 Joopi AI · All rights reserved.
             </p>
             <a href="#audit" className="border border-white/10 hover:bg-white/5 text-foreground font-medium px-5 py-2.5 rounded-full transition-all inline-flex items-center gap-2 text-[13px]">
               Get Free Systems Audit
@@ -57,9 +62,9 @@ export const Footer: React.FC = () => {
             <div>
               <h4 className="text-foreground font-bold text-[12px] mb-6 tracking-wider uppercase">Services</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">AI Receptionist</a></li>
-                <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">Lead Reactivation</a></li>
-                <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">Referral Automation</a></li>
+                <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">Alex Voice Agent</a></li>
+                <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">Jennifer SMS Agent</a></li>
+                <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">Lead Qualification</a></li>
                 <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">CRM Integration</a></li>
                 <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">Custom Build-outs</a></li>
               </ul>
@@ -96,7 +101,7 @@ export const Footer: React.FC = () => {
         className="absolute -bottom-[2vw] left-0 right-0 w-full flex justify-center text-[12vw] sm:text-[10vw] font-heading font-black text-transparent select-none pointer-events-none tracking-tight whitespace-nowrap z-0 opacity-40" 
         style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.08)' }}
       >
-        1 Click Outcome
+        Joopi AI
       </div>
     </footer>
   );
