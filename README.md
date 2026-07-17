@@ -36,6 +36,7 @@ src/
 │   ├── WorkflowSteps.tsx # 3-Phase agent deployment process breakdown
 │   ├── Testimonial.tsx  # Client success stories slider
 │   ├── FAQAccordion.tsx # Expandable questions section
+│   ├── PopularForms.tsx # Premium Pricing section with dark-mode 3D cards
 │   └── Footer.tsx       # Mega footer with watermark & logo
 ├── pages/
 │   └── Home.tsx         # Main page orchestrator
