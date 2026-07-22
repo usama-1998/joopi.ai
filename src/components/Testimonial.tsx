@@ -129,7 +129,7 @@ export const Testimonial: React.FC = () => {
                   className={`w-8 h-8 rounded-[12px] overflow-hidden flex items-center justify-center transition-all duration-300 cursor-pointer ${
                     activeIndex === idx 
                       ? 'bg-[#e6e8e8] opacity-100 scale-110 shadow-md ring-1 ring-primary/50' 
-                      : 'bg-[#31403E] opacity-30 grayscale hover:opacity-70 hover:grayscale-0'
+                      : 'bg-[#262626] opacity-30 grayscale hover:opacity-70 hover:grayscale-0'
                   }`}
                 >
                   <img 
@@ -154,14 +154,14 @@ export const Testimonial: React.FC = () => {
             {/* Blueprint Stats Box */}
             <div 
               key={`stats-${activeIndex}`}
-              className="relative border border-[#31403E] py-8 px-6 grid grid-cols-1 sm:grid-cols-2 gap-8 items-center animate-in fade-in duration-700 w-full"
+              className="relative border border-[#262626] py-8 px-6 grid grid-cols-1 sm:grid-cols-2 gap-8 items-center animate-in fade-in duration-700 w-full"
             >
               
               {/* Corner crosshairs */}
-              <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-[#5a6d6a] text-lg font-light leading-none pointer-events-none">+</div>
-              <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-[#5a6d6a] text-lg font-light leading-none pointer-events-none">+</div>
-              <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-[#5a6d6a] text-lg font-light leading-none pointer-events-none">+</div>
-              <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 text-[#5a6d6a] text-lg font-light leading-none pointer-events-none">+</div>
+              <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-[#525252] text-lg font-light leading-none pointer-events-none">+</div>
+              <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-[#525252] text-lg font-light leading-none pointer-events-none">+</div>
+              <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-[#525252] text-lg font-light leading-none pointer-events-none">+</div>
+              <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 text-[#525252] text-lg font-light leading-none pointer-events-none">+</div>
 
               {/* Left Stat */}
               <div className="text-center relative">
@@ -175,7 +175,7 @@ export const Testimonial: React.FC = () => {
                   {active.stat1Label}
                 </p>
                 {/* Vertical divider */}
-                <div className="hidden sm:block absolute right-[-1rem] top-1 bottom-1 w-px bg-[#31403E]"></div>
+                <div className="hidden sm:block absolute right-[-1rem] top-1 bottom-1 w-px bg-[#262626]"></div>
               </div>
 
               {/* Right Stat */}

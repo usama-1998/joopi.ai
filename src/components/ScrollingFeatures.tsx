@@ -19,12 +19,12 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
           <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors duration-1000 blur-3xl"></div>
           
           {/* Active Voice Call Mockup */}
-          <div className="w-full max-w-[260px] aspect-[9/19] bg-[#0a100e] rounded-[36px] border-4 border-[#1a2e26] p-4 shadow-2xl relative flex flex-col items-center transform group-hover:scale-105 group-hover:-translate-y-2 transition-all duration-700 z-10">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-5 bg-[#1a2e26] rounded-b-xl z-20"></div>
+          <div className="h-[90%] max-h-[480px] w-auto aspect-[9/19] bg-[#0a0a0a] rounded-[36px] border-4 border-[#171717] p-4 shadow-2xl relative flex flex-col items-center transform group-hover:scale-105 group-hover:-translate-y-2 transition-all duration-700 z-10">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-5 bg-[#171717] rounded-b-xl z-20"></div>
             
             {/* Caller Info */}
             <div className="mt-8 flex flex-col items-center text-center">
-               <div className="relative w-16 h-16 rounded-full bg-primary/20 border-2 border-primary/50 flex items-center justify-center mb-3 shadow-[0_0_20px_rgba(74,222,128,0.2)]">
+               <div className="relative w-16 h-16 rounded-full bg-primary/20 border-2 border-primary/50 flex items-center justify-center mb-3 shadow-[0_0_20px_rgba(234,179,8,0.2)]">
                  <Icon icon="lucide:mic" className="text-primary text-2xl" />
                  {/* Ripple effect */}
                  <div className="absolute inset-0 rounded-full border border-primary/50 animate-[ping_2s_infinite]"></div>
@@ -87,14 +87,14 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
           <div className="absolute inset-0 bg-blue-500/5 group-hover:bg-blue-500/10 transition-colors duration-1000 blur-3xl"></div>
 
           {/* Split Screen SMS Interface */}
-          <div className="w-full max-w-[320px] h-[380px] bg-[#0c141d] rounded-[24px] border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden flex flex-col transform group-hover:rotateY(-10deg) group-hover:rotateX(5deg) transition-transform duration-700 [transform-style:preserve-3d]">
+          <div className="h-[90%] max-h-[480px] w-auto aspect-[1/1.2] bg-[#0a0a0a] rounded-[24px] border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden flex flex-col transform group-hover:rotateY(-10deg) group-hover:rotateX(5deg) transition-transform duration-700 [transform-style:preserve-3d]">
             
             {/* Header */}
             <div className="bg-black/60 p-4 border-b border-white/10 flex items-center justify-between backdrop-blur-md z-20">
               <div className="flex items-center gap-3">
                 <div className="relative w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center border border-blue-500/50">
                    <Icon icon="lucide:message-square" className="text-blue-400 text-lg" />
-                   <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-black"></div>
+                   <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-yellow-500 rounded-full border-2 border-black"></div>
                 </div>
                 <div>
                   <h4 className="text-white text-sm font-bold">Jennifer</h4>
@@ -108,7 +108,7 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
             </div>
             
             {/* Chat Area */}
-            <div className="flex-1 p-4 flex flex-col gap-4 overflow-hidden relative z-10 bg-gradient-to-b from-[#0c141d] to-[#121c27]">
+            <div className="flex-1 p-4 flex flex-col gap-4 overflow-hidden relative z-10 bg-gradient-to-b from-[#0a0a0a] to-[#171717]">
                <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '16px 16px' }}></div>
                
                <div className="bg-blue-600/90 text-white text-[12px] p-3 rounded-2xl rounded-tr-sm max-w-[85%] self-end shadow-md border border-blue-500/30 transform group-hover:-translate-y-1 transition-transform duration-500">
@@ -165,7 +165,7 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
           </div>
 
           {/* Setup Progress Graphic */}
-          <div className="w-full max-w-[340px] bg-[#0f1715]/80 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl p-6 flex flex-col relative z-10 transform group-hover:scale-105 transition-transform duration-700">
+          <div className="w-full max-w-[340px] bg-[#0a0a0a]/80 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl p-6 flex flex-col relative z-10 transform group-hover:scale-105 transition-transform duration-700">
              
              {/* Header */}
              <div className="flex items-center justify-between mb-8">
@@ -179,7 +179,7 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
                      <p className="text-primary/70 text-[10px] font-mono uppercase tracking-widest mt-0.5">Initializing</p>
                   </div>
                 </div>
-                <div className="w-12 h-12 bg-[#1a2e26] rounded-full flex items-center justify-center border border-primary/20 relative">
+                <div className="w-12 h-12 bg-[#171717] rounded-full flex items-center justify-center border border-primary/20 relative">
                    <span className="text-primary font-mono text-sm font-bold relative z-10">99<span className="text-[10px]">%</span></span>
                    <svg className="absolute inset-0 w-full h-full -rotate-90">
                       <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" strokeWidth="2" className="text-white/10" />
@@ -191,7 +191,7 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
              <div className="space-y-4">
                 {/* Step 1 */}
                 <div className="flex items-center gap-4 group/step">
-                   <div className="w-6 h-6 rounded-full bg-primary/20 border border-primary flex items-center justify-center shadow-[0_0_10px_rgba(74,222,128,0.5)]">
+                   <div className="w-6 h-6 rounded-full bg-primary/20 border border-primary flex items-center justify-center shadow-[0_0_10px_rgba(234,179,8,0.5)]">
                      <Icon icon="lucide:check" className="text-primary text-[12px] font-bold" strokeWidth="4" />
                    </div>
                    <div className="flex-1">
@@ -204,7 +204,7 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
                 </div>
                 {/* Step 2 */}
                 <div className="flex items-center gap-4 group/step">
-                   <div className="w-6 h-6 rounded-full bg-primary/20 border border-primary flex items-center justify-center shadow-[0_0_10px_rgba(74,222,128,0.5)]">
+                   <div className="w-6 h-6 rounded-full bg-primary/20 border border-primary flex items-center justify-center shadow-[0_0_10px_rgba(234,179,8,0.5)]">
                      <Icon icon="lucide:check" className="text-primary text-[12px] font-bold" strokeWidth="4" />
                    </div>
                    <div className="flex-1">
@@ -227,7 +227,7 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
                        <span className="text-primary font-mono text-[10px] animate-pulse">PROCESSING</span>
                      </div>
                      <div className="w-full h-1 bg-white/10 rounded-full overflow-hidden relative">
-                        <div className="h-full w-[80%] bg-gradient-to-r from-primary to-green-300 rounded-full"></div>
+                        <div className="h-full w-[80%] bg-gradient-to-r from-primary to-yellow-300 rounded-full"></div>
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent w-[30%] animate-[shimmer_1.5s_infinite]"></div>
                      </div>
                    </div>
@@ -250,11 +250,11 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
           <div className="relative w-full max-w-[340px] aspect-video flex items-center justify-center">
              
              {/* Joopi Core */}
-             <div className="relative w-20 h-20 rounded-2xl bg-[#0d1614] border-2 border-primary shadow-[0_0_40px_rgba(74,222,128,0.2)] flex items-center justify-center z-20 group-hover:shadow-[0_0_60px_rgba(74,222,128,0.5)] group-hover:scale-110 transition-all duration-500">
-               <span className="text-primary font-black text-3xl font-heading">J</span>
+             <div className="relative w-20 h-20 bg-gradient-to-br from-primary to-yellow-500 rounded-full shadow-[0_0_40px_rgba(234,179,8,0.4)] flex items-center justify-center z-20 group-hover:shadow-[0_0_60px_rgba(234,179,8,0.7)] group-hover:scale-110 transition-all duration-500">
+               <Icon icon="lucide:mic" className="text-[#0a0a0a] text-4xl relative z-10" />
                {/* Pulse rings */}
-               <div className="absolute inset-[-4px] border border-primary/50 rounded-2xl opacity-0 group-hover:opacity-100 animate-[ping_2s_infinite]"></div>
-               <div className="absolute inset-[-4px] border border-primary/30 rounded-2xl opacity-0 group-hover:opacity-100 animate-[ping_2.5s_infinite]"></div>
+               <div className="absolute inset-[-4px] border border-primary/50 rounded-full opacity-0 group-hover:opacity-100 animate-[ping_2s_infinite]"></div>
+               <div className="absolute inset-[-4px] border border-primary/30 rounded-full opacity-0 group-hover:opacity-100 animate-[ping_2.5s_infinite]"></div>
              </div>
              
              {/* Integrations */}
@@ -376,7 +376,7 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
 
             {/* Right Visual */}
             <div className="w-full lg:w-1/2">
-              <div key={`visual-${activeIndex}`} className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square xl:aspect-[4/3] rounded-2xl bg-[#0d1614] border border-border/50 shadow-xl overflow-hidden animate-in fade-in slide-in-from-right-8 duration-700 fill-mode-both flex items-center justify-center">
+              <div key={`visual-${activeIndex}`} className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square xl:aspect-[4/3] rounded-2xl bg-[#050505] border border-border/50 shadow-xl overflow-hidden animate-in fade-in slide-in-from-right-8 duration-700 fill-mode-both flex items-center justify-center">
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
                 
                 {active.visual}

@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
                 <div className="absolute inset-[-3px] border border-dashed border-primary/30 rounded-full animate-[spin_8s_linear_infinite] group-hover:border-primary/60 transition-colors duration-500">
                 </div>
                 {/* Core Orb */}
-                <div className="bg-gradient-to-br from-primary via-green-500 to-green-700 w-[24px] h-[24px] rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(74,222,128,0.4)] group-hover:shadow-[0_0_15px_rgba(74,222,128,0.7)] relative z-10 transition-all duration-300 group-hover:scale-105">
+                <div className="bg-gradient-to-br from-primary via-yellow-500 to-yellow-700 w-[24px] h-[24px] rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(234,179,8,0.4)] group-hover:shadow-[0_0_15px_rgba(234,179,8,0.7)] relative z-10 transition-all duration-300 group-hover:scale-105">
                   <div className="absolute inset-[1.5px] bg-black/20 rounded-full blur-[1px]"></div>
                   <Icon icon="lucide:mic" className="text-white text-[13px] relative z-20 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)] group-hover:animate-pulse" />
                 </div>
@@ -86,7 +86,7 @@ export const Footer: React.FC = () => {
                 <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">Free Guides</a></li>
                 <li className="pt-2">
                   <a href="#" className="text-[14px] text-foreground hover:text-white transition-colors inline-flex items-center gap-2">
-                    <span className="w-[5px] h-[5px] rounded-full bg-[#42c181] shadow-[0_0_8px_rgba(66,193,129,0.8)]"></span>
+                    <span className="w-[5px] h-[5px] rounded-full bg-[#eab308] shadow-[0_0_8px_rgba(66,193,129,0.8)]"></span>
                     Systems Operational
                   </a>
                 </li>

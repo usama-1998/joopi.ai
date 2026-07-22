@@ -28,7 +28,7 @@ export const PopularForms: React.FC = () => {
         @media (min-width: 1024px) { .pricing-clip { --pattern-w: 52px; } }
         @media (min-width: 1280px) { .pricing-clip { --pattern-w: 68px; } }
       `}</style>
-      <section id="pricing" className="relative z-50 bg-[#0d1614] -mt-[40px] pt-[120px] pb-[160px] pricing-clip font-sans">
+      <section id="pricing" className="relative z-50 bg-[#050505] -mt-[40px] pt-[120px] pb-[160px] pricing-clip font-sans">
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           
           {/* Header */}
@@ -41,7 +41,7 @@ export const PopularForms: React.FC = () => {
               <span className="text-[12px] font-bold uppercase tracking-widest">Pricing Plans</span>
             </div>
             <h2 className="font-heading text-4xl md:text-5xl font-bold leading-tight text-white tracking-tight">
-              Simple Pricing, <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-500">Done For You</span>
+              Simple Pricing, <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-500">Done For You</span>
             </h2>
             <p className="text-[16px] md:text-[18px] text-white/70 max-w-2xl leading-relaxed mt-2">
               We offer transparent pricing that scales with your business. Choose a plan, and our team will build, integrate, and manage your AI sales agents from day one.
@@ -70,7 +70,7 @@ export const PopularForms: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto perspective-1000">
             
             {/* Tier 1: Early Access */}
-            <div className="group relative bg-[#101b19]/80 backdrop-blur-xl border border-white/10 rounded-[24px] p-8 hover:border-primary/40 transition-all duration-500 flex flex-col transform-style-3d hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(74,222,128,0.1)]">
+            <div className="group relative bg-[#0a0a0a]/80 backdrop-blur-xl border border-white/10 rounded-[24px] p-8 hover:border-primary/40 transition-all duration-500 flex flex-col transform-style-3d hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(234,179,8,0.1)]">
               <div className="mb-8">
                 <h3 className="font-heading font-bold text-xl text-white mb-2 flex items-center gap-2.5">
                   <Icon icon="lucide:rocket" className="text-2xl text-primary" />
@@ -116,8 +116,8 @@ export const PopularForms: React.FC = () => {
             </div>
 
             {/* Tier 2: Growth (Most Popular) */}
-            <div className="group relative bg-gradient-to-b from-[#162a24] to-[#101b19] backdrop-blur-xl border border-primary/50 rounded-[24px] p-8 transition-all duration-500 flex flex-col transform-style-3d md:scale-105 shadow-[0_0_30px_rgba(74,222,128,0.15)] hover:shadow-[0_0_50px_rgba(74,222,128,0.25)] z-10">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-green-500 text-[#0d1614] text-[11px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-[0_0_15px_rgba(74,222,128,0.5)] flex items-center gap-1.5">
+            <div className="group relative bg-gradient-to-b from-[#171717] to-[#0a0a0a] backdrop-blur-xl border border-primary/50 rounded-[24px] p-8 transition-all duration-500 flex flex-col transform-style-3d md:scale-105 shadow-[0_0_30px_rgba(234,179,8,0.15)] hover:shadow-[0_0_50px_rgba(234,179,8,0.25)] z-10">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-yellow-500 text-[#050505] text-[11px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-[0_0_15px_rgba(234,179,8,0.5)] flex items-center gap-1.5">
                 <Icon icon="lucide:flame" className="text-sm" />
                 Most Popular
               </div>
@@ -165,13 +165,13 @@ export const PopularForms: React.FC = () => {
                 </li>
               </ul>
 
-              <button className="w-full py-4 rounded-xl font-bold text-[15px] transition-all bg-primary text-[#0d1614] hover:bg-green-400 shadow-[0_0_20px_rgba(74,222,128,0.3)] hover:shadow-[0_0_30px_rgba(74,222,128,0.5)] transform hover:-translate-y-1 cursor-pointer">
+              <button className="w-full py-4 rounded-xl font-bold text-[15px] transition-all bg-primary text-[#050505] hover:bg-yellow-400 shadow-[0_0_20px_rgba(234,179,8,0.3)] hover:shadow-[0_0_30px_rgba(234,179,8,0.5)] transform hover:-translate-y-1 cursor-pointer">
                 Start Scaling Now
               </button>
             </div>
 
             {/* Tier 3: Enterprise */}
-            <div className="group relative bg-[#101b19]/80 backdrop-blur-xl border border-white/10 rounded-[24px] p-8 hover:border-primary/40 transition-all duration-500 flex flex-col transform-style-3d hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(74,222,128,0.1)]">
+            <div className="group relative bg-[#0a0a0a]/80 backdrop-blur-xl border border-white/10 rounded-[24px] p-8 hover:border-primary/40 transition-all duration-500 flex flex-col transform-style-3d hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(234,179,8,0.1)]">
               <div className="mb-8">
                 <h3 className="font-heading font-bold text-xl text-white mb-2 flex items-center gap-2.5">
                   <Icon icon="lucide:building-2" className="text-2xl text-primary" />

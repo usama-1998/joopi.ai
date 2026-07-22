@@ -64,11 +64,11 @@ export const FAQAccordion: React.FC<{
       <section id="faq" className="relative z-50 bg-[#fcfcfd] -mt-[40px] pt-[120px] pb-32 faq-clip font-sans">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#202b29] text-white mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#262626] text-white mb-6">
               <Icon icon="lucide:message-square" className="text-sm fill-current" />
               <span className="text-[11px] font-bold uppercase tracking-widest">FAQ</span>
             </div>
-            <h2 className="font-heading text-3xl md:text-[40px] font-bold text-[#101b19] tracking-tight">
+            <h2 className="font-heading text-3xl md:text-[40px] font-bold text-[#0a0a0a] tracking-tight">
               Got Questions? We've Got Answers.
             </h2>
           </div>
@@ -79,7 +79,7 @@ export const FAQAccordion: React.FC<{
                 <div key={idx} className="bg-white border border-gray-300/80 rounded-lg overflow-hidden shadow-sm">
                   <h3 
                     onClick={() => onToggleFaq(idx)}
-                    className="font-semibold text-[15px] p-5 flex justify-between items-center cursor-pointer text-[#101b19] select-none hover:bg-gray-50/50 transition-colors"
+                    className="font-semibold text-[15px] p-5 flex justify-between items-center cursor-pointer text-[#0a0a0a] select-none hover:bg-gray-50/50 transition-colors"
                   >
                     {faq.question}
                     <Icon 

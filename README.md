@@ -49,7 +49,8 @@ src/
 
 ## 🎨 Design System & Aesthetics
 
-This application relies on a premium, dark-mode design:
+This application features a highly polished **Black & Gold** premium design theme:
+- **Color Palette**: Deep neutral blacks (`#0a0a0a`, `#141414`) paired with striking gold/amber accents (`#eab308`, `#facc15`).
 - **Bespoke Animations**: Custom CSS-driven 3D transforms, orbital ring paths, custom wave sweeps, and interactive hover states.
 - **Micro-interactions**: Subtle hover actions on the logo (spinning ring, pulsing icon), buttons, and card containers.
 - **Responsive Layout**: Native CSS styling engineered with Tailwind utility classes for high-performance responsiveness across all screen sizes.

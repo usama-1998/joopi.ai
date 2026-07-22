@@ -11,7 +11,7 @@ export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFre
           <div className="absolute inset-0 bg-primary/10 rounded-full blur-[40px] group-hover:bg-primary/30 transition-colors duration-1000"></div>
           
           {/* Outer Orbital Ring (Slow) */}
-          <div className="absolute inset-0 border border-primary/20 rounded-full animate-[spin_12s_linear_infinite] group-hover:border-primary/40 transition-colors duration-700 shadow-[inset_0_0_15px_rgba(74,222,128,0.1)]">
+          <div className="absolute inset-0 border border-primary/20 rounded-full animate-[spin_12s_linear_infinite] group-hover:border-primary/40 transition-colors duration-700 shadow-[inset_0_0_15px_rgba(234,179,8,0.1)]">
           </div>
 
           {/* Inner Orbital Ring (Fast Reverse) */}
@@ -20,12 +20,12 @@ export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFre
           
           {/* Middle Decorative Ring */}
           <div className="absolute inset-10 border border-white/5 rounded-full animate-[spin_20s_linear_infinite]">
-            <div className="absolute top-1/2 -left-1 w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_rgba(74,222,128,0.8)]"></div>
+            <div className="absolute top-1/2 -left-1 w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_rgba(234,179,8,0.8)]"></div>
             <div className="absolute top-1/2 -right-1 w-2 h-2 bg-blue-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.8)]"></div>
           </div>
 
           {/* Core Orb */}
-          <div className="relative w-[72px] h-[72px] bg-gradient-to-br from-primary via-green-500 to-green-700 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(74,222,128,0.6)] z-10 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(74,222,128,0.8)] transition-all duration-500 transform-style-3d">
+          <div className="relative w-[72px] h-[72px] bg-gradient-to-br from-primary via-yellow-500 to-yellow-700 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(234,179,8,0.6)] z-10 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(234,179,8,0.8)] transition-all duration-500 transform-style-3d">
             <div className="absolute inset-1 bg-black/20 rounded-full blur-[2px]"></div>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.4),transparent)] rounded-full"></div>
             <Icon icon="lucide:mic" className="text-white text-3xl relative z-10 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:animate-pulse" />
@@ -39,7 +39,7 @@ export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFre
       
       <h1 className="font-heading text-4xl sm:text-5xl md:text-[62px] leading-tight md:leading-[60px] font-bold tracking-tight mb-6 text-white">
         AI-Powered Sales Agents to <br className="hidden sm:block" />
-        <span className="text-[#4ade80]">Scale Effortlessly</span>
+        <span className="text-[#eab308]">Scale Effortlessly</span>
       </h1>
       
       <p className="text-base sm:text-[18px] leading-relaxed md:leading-[28px] text-white/90 max-w-3xl mx-auto mb-6 px-2">

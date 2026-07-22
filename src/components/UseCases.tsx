@@ -11,7 +11,7 @@ interface UseCaseData {
 const UseCaseCard: React.FC<UseCaseData> = ({ title, outcome, description, visual }) => {
   return (
     <div className="flex flex-col gap-6 text-left group cursor-pointer">
-      <div className="relative w-full aspect-square rounded-2xl bg-[#0d1614] flex items-center justify-center overflow-hidden border border-white/[0.04] shadow-lg">
+      <div className="relative w-full aspect-square rounded-2xl bg-[#050505] flex items-center justify-center overflow-hidden border border-white/[0.04] shadow-lg">
         {/* Subtle grid background */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
 
@@ -64,7 +64,7 @@ export const UseCases: React.FC = () => {
           <div className="relative flex items-center gap-2 group-hover:[transform:rotateX(10deg)_rotateY(-15deg)] transition-transform duration-700 [transform-style:preserve-3d]">
             <div className="w-1.5 h-6 bg-primary/40 rounded-full group-hover:animate-[wave_0.8s_ease-in-out_infinite] group-hover:h-12 group-hover:bg-primary transition-all duration-300"></div>
             <div className="w-1.5 h-10 bg-primary/60 rounded-full group-hover:animate-[wave_1s_ease-in-out_infinite] group-hover:h-16 group-hover:bg-primary transition-all duration-300 delay-75"></div>
-            <div className="relative w-16 h-16 rounded-full bg-background/80 backdrop-blur-sm border-2 border-primary/50 flex items-center justify-center z-10 shadow-[0_0_20px_rgba(74,222,128,0.2)] group-hover:border-primary group-hover:shadow-[0_0_40px_rgba(74,222,128,0.6)] transition-all duration-500 group-hover:scale-110">
+            <div className="relative w-16 h-16 rounded-full bg-background/80 backdrop-blur-sm border-2 border-primary/50 flex items-center justify-center z-10 shadow-[0_0_20px_rgba(234,179,8,0.2)] group-hover:border-primary group-hover:shadow-[0_0_40px_rgba(234,179,8,0.6)] transition-all duration-500 group-hover:scale-110">
               <Icon icon="lucide:mic" className="text-primary text-3xl group-hover:text-white transition-colors" />
               {/* Outer rotating ring */}
               <div className="absolute inset-[-8px] border border-dashed border-primary/30 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-[spin_4s_linear_infinite] transition-opacity"></div>
@@ -140,11 +140,11 @@ export const UseCases: React.FC = () => {
              </div>
              
              {/* Outgoing Conversions (Now shooting outwards) */}
-             <div className="absolute top-1/2 right-4 -translate-y-1/2 w-6 h-6 border border-green-500/50 bg-green-500/20 rounded-full flex items-center justify-center opacity-0 group-hover:translate-x-12 group-hover:opacity-100 group-hover:scale-125 transition-all duration-700 delay-300">
-               <Icon icon="lucide:check" className="text-green-500 text-xs" />
+             <div className="absolute top-1/2 right-4 -translate-y-1/2 w-6 h-6 border border-yellow-500/50 bg-yellow-500/20 rounded-full flex items-center justify-center opacity-0 group-hover:translate-x-12 group-hover:opacity-100 group-hover:scale-125 transition-all duration-700 delay-300">
+               <Icon icon="lucide:check" className="text-yellow-500 text-xs" />
              </div>
-             <div className="absolute top-1/4 right-6 w-5 h-5 border border-green-500/50 bg-green-500/20 rounded-full flex items-center justify-center opacity-0 group-hover:translate-x-8 group-hover:-translate-y-4 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 delay-500">
-               <Icon icon="lucide:check" className="text-green-500 text-[10px]" />
+             <div className="absolute top-1/4 right-6 w-5 h-5 border border-yellow-500/50 bg-yellow-500/20 rounded-full flex items-center justify-center opacity-0 group-hover:translate-x-8 group-hover:-translate-y-4 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 delay-500">
+               <Icon icon="lucide:check" className="text-yellow-500 text-[10px]" />
              </div>
           </div>
         </div>
@@ -166,7 +166,7 @@ export const UseCases: React.FC = () => {
             <div className="absolute left-6 top-1/2 -translate-y-1/2 w-16 h-16 border border-dashed border-primary/30 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-[spin_6s_linear_infinite] transition-opacity"></div>
             
             {/* Joopi Node */}
-            <div className="w-12 h-12 rounded-full bg-background border-2 border-primary/50 flex items-center justify-center z-20 shadow-[0_0_15px_rgba(74,222,128,0.3)] group-hover:scale-125 group-hover:border-primary group-hover:shadow-[0_0_30px_rgba(74,222,128,0.6)] transition-all duration-500 relative bg-[#101b19]">
+            <div className="w-12 h-12 rounded-full bg-background border-2 border-primary/50 flex items-center justify-center z-20 shadow-[0_0_15px_rgba(234,179,8,0.3)] group-hover:scale-125 group-hover:border-primary group-hover:shadow-[0_0_30px_rgba(234,179,8,0.6)] transition-all duration-500 relative bg-[#0a0a0a]">
               <span className="font-black text-primary text-lg font-heading">J</span>
             </div>
             
@@ -216,10 +216,10 @@ export const UseCases: React.FC = () => {
 
         <div className="flex items-center justify-between mt-16 pt-2">
           <div className="flex items-center gap-3">
-            <button className="w-10 h-10 rounded-full bg-[#0d1614] border border-white/[0.04] hover:bg-[#15231f] flex items-center justify-center transition-colors cursor-pointer">
+            <button className="w-10 h-10 rounded-full bg-[#050505] border border-white/[0.04] hover:bg-[#15231f] flex items-center justify-center transition-colors cursor-pointer">
               <Icon icon="lucide:chevron-left" className="text-white/70 text-lg" />
             </button>
-            <button className="w-10 h-10 rounded-full bg-[#0d1614] border border-white/[0.04] hover:bg-[#15231f] flex items-center justify-center transition-colors cursor-pointer">
+            <button className="w-10 h-10 rounded-full bg-[#050505] border border-white/[0.04] hover:bg-[#15231f] flex items-center justify-center transition-colors cursor-pointer">
               <Icon icon="lucide:chevron-right" className="text-white/70 text-lg" />
             </button>
           </div>

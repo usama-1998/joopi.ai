@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 
 export const WorkflowSteps: React.FC = () => {
   return (
-    <section className="py-24 border-b border-border bg-[#101b19]">
+    <section className="py-24 border-b border-border bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto px-6">
         
         {/* Header */}
@@ -27,7 +27,7 @@ export const WorkflowSteps: React.FC = () => {
             {/* Text Side */}
             <div className="flex-1 text-left">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 rounded-full bg-white text-[#101b19] flex items-center justify-center font-bold text-xl shadow-lg">1</div>
+                <div className="w-10 h-10 rounded-full bg-white text-[#0a0a0a] flex items-center justify-center font-bold text-xl shadow-lg">1</div>
                 <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">We Analyze Your Bottlenecks</h3>
               </div>
               <p className="text-[17px] text-white/70 leading-relaxed md:ml-14">
@@ -35,13 +35,13 @@ export const WorkflowSteps: React.FC = () => {
               </p>
             </div>
             {/* Visual Side */}
-            <div className="flex-1 w-full max-w-md bg-[#162522] border border-white/5 rounded-2xl p-8 flex items-center justify-center relative shadow-2xl group overflow-hidden">
+            <div className="flex-1 w-full max-w-md bg-[#141414] border border-white/5 rounded-2xl p-8 flex items-center justify-center relative shadow-2xl group overflow-hidden">
               <div className="absolute top-4 left-4 w-6 h-6 border-t-2 border-l-2 border-primary/20 rounded-tl-sm group-hover:border-primary transition-colors duration-500"></div>
               <div className="absolute top-4 right-4 w-6 h-6 border-t-2 border-r-2 border-primary/20 rounded-tr-sm group-hover:border-primary transition-colors duration-500"></div>
               <div className="absolute bottom-4 left-4 w-6 h-6 border-b-2 border-l-2 border-primary/20 rounded-bl-sm group-hover:border-primary transition-colors duration-500"></div>
               <div className="absolute bottom-4 right-4 w-6 h-6 border-b-2 border-r-2 border-primary/20 rounded-br-sm group-hover:border-primary transition-colors duration-500"></div>
               
-              <div className="relative w-56 h-56 rounded-full border-2 border-primary/10 flex items-center justify-center overflow-hidden group-hover:border-primary/30 transition-colors duration-700 shadow-[0_0_30px_rgba(74,222,128,0.1)] group-hover:shadow-[0_0_50px_rgba(74,222,128,0.2)]">
+              <div className="relative w-56 h-56 rounded-full border-2 border-primary/10 flex items-center justify-center overflow-hidden group-hover:border-primary/30 transition-colors duration-700 shadow-[0_0_30px_rgba(234,179,8,0.1)] group-hover:shadow-[0_0_50px_rgba(234,179,8,0.2)]">
                 <div className="absolute inset-0 bg-primary/5 rounded-full"></div>
                 
                 {/* Radar Sweep */}
@@ -56,10 +56,10 @@ export const WorkflowSteps: React.FC = () => {
                 {/* Ping Dots */}
                 <div className="absolute top-12 right-16 w-2 h-2 rounded-full bg-red-500 animate-ping group-hover:bg-primary transition-colors"></div>
                 <div className="absolute bottom-14 left-12 w-2 h-2 rounded-full bg-yellow-500 animate-ping group-hover:bg-primary transition-colors" style={{ animationDelay: '1s' }}></div>
-                <div className="absolute top-20 left-20 w-3 h-3 rounded-full bg-primary shadow-[0_0_15px_rgba(74,222,128,1)] animate-pulse"></div>
+                <div className="absolute top-20 left-20 w-3 h-3 rounded-full bg-primary shadow-[0_0_15px_rgba(234,179,8,1)] animate-pulse"></div>
                 
                 {/* Center Icon */}
-                <div className="relative z-10 w-10 h-10 rounded-full bg-background border-2 border-primary flex items-center justify-center shadow-[0_0_20px_rgba(74,222,128,0.5)] group-hover:scale-110 transition-transform duration-500">
+                <div className="relative z-10 w-10 h-10 rounded-full bg-background border-2 border-primary flex items-center justify-center shadow-[0_0_20px_rgba(234,179,8,0.5)] group-hover:scale-110 transition-transform duration-500">
                   <Icon icon="lucide:scan-line" className="text-primary text-lg" />
                 </div>
               </div>
@@ -74,7 +74,7 @@ export const WorkflowSteps: React.FC = () => {
             {/* Text Side */}
             <div className="flex-1 text-left">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 rounded-full bg-white text-[#101b19] flex items-center justify-center font-bold text-xl shadow-lg">2</div>
+                <div className="w-10 h-10 rounded-full bg-white text-[#0a0a0a] flex items-center justify-center font-bold text-xl shadow-lg">2</div>
                 <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">Build & Automate</h3>
               </div>
               <p className="text-[17px] text-white/70 leading-relaxed md:ml-14">
@@ -82,7 +82,7 @@ export const WorkflowSteps: React.FC = () => {
               </p>
             </div>
             {/* Visual Side */}
-            <div className="flex-1 w-full max-w-md bg-[#162522] border border-white/5 rounded-2xl p-6 flex flex-col justify-center relative shadow-2xl group">
+            <div className="flex-1 w-full max-w-md bg-[#141414] border border-white/5 rounded-2xl p-6 flex flex-col justify-center relative shadow-2xl group">
               {/* Glowing Data Blocks */}
               <div className="relative w-full h-56 flex items-center justify-center">
                 <div className="absolute inset-0 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors duration-1000"></div>
@@ -100,7 +100,7 @@ export const WorkflowSteps: React.FC = () => {
                   </div>
                   
                   {/* Block 2 (Snapping in) */}
-                  <div className="flex items-center gap-3 bg-primary/20 border border-primary/50 rounded-xl p-3 w-60 backdrop-blur-sm transform translate-x-6 group-hover:translate-x-0 group-hover:scale-105 shadow-[0_0_20px_rgba(74,222,128,0.3)] transition-all duration-700 z-20">
+                  <div className="flex items-center gap-3 bg-primary/20 border border-primary/50 rounded-xl p-3 w-60 backdrop-blur-sm transform translate-x-6 group-hover:translate-x-0 group-hover:scale-105 shadow-[0_0_20px_rgba(234,179,8,0.3)] transition-all duration-700 z-20">
                     <div className="w-10 h-10 rounded-lg bg-primary/30 flex items-center justify-center relative">
                       <Icon icon="lucide:zap" className="text-primary relative z-10" />
                       <div className="absolute inset-0 bg-primary/40 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -124,7 +124,7 @@ export const WorkflowSteps: React.FC = () => {
                 </div>
                 
                 {/* Connecting Line */}
-                <div className="absolute left-[44px] top-6 bottom-6 w-1 bg-gradient-to-b from-blue-500 via-primary to-purple-500 -z-10 rounded-full opacity-50 group-hover:opacity-100 group-hover:shadow-[0_0_15px_rgba(74,222,128,0.5)] transition-all duration-700"></div>
+                <div className="absolute left-[44px] top-6 bottom-6 w-1 bg-gradient-to-b from-blue-500 via-primary to-purple-500 -z-10 rounded-full opacity-50 group-hover:opacity-100 group-hover:shadow-[0_0_15px_rgba(234,179,8,0.5)] transition-all duration-700"></div>
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@ export const WorkflowSteps: React.FC = () => {
             {/* Text Side */}
             <div className="flex-1 text-left">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 rounded-full bg-[#4ade80] text-[#101b19] flex items-center justify-center font-bold text-xl shadow-[0_0_15px_rgba(74,222,128,0.3)]">3</div>
+                <div className="w-10 h-10 rounded-full bg-[#eab308] text-[#0a0a0a] flex items-center justify-center font-bold text-xl shadow-[0_0_15px_rgba(234,179,8,0.3)]">3</div>
                 <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">Scale & Profit</h3>
               </div>
               <p className="text-[17px] text-white/70 leading-relaxed md:ml-14">
@@ -145,7 +145,7 @@ export const WorkflowSteps: React.FC = () => {
               </p>
             </div>
             {/* Visual Side */}
-            <div className="flex-1 w-full max-w-md bg-[#162522] border border-white/5 rounded-2xl p-8 flex flex-col justify-center relative shadow-2xl overflow-hidden group">
+            <div className="flex-1 w-full max-w-md bg-[#141414] border border-white/5 rounded-2xl p-8 flex flex-col justify-center relative shadow-2xl overflow-hidden group">
               <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-colors duration-1000"></div>
               
               {/* Interactive Calendar Grid */}
@@ -159,36 +159,36 @@ export const WorkflowSteps: React.FC = () => {
                   {/* Mon */}
                   <div className="space-y-2">
                     <div className="text-[10px] text-white/50 text-center mb-1.5 font-semibold">M</div>
-                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(74,222,128,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
-                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(74,222,128,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
+                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(234,179,8,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
+                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(234,179,8,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
                     <div className="h-7 rounded-md bg-white/5 group-hover:bg-primary/20 group-hover:border-primary/40 transition-colors duration-500 delay-100 flex items-center justify-center"><Icon icon="lucide:check" className="text-primary text-[12px] opacity-0 group-hover:opacity-100 transition-opacity delay-300" strokeWidth="3" /></div>
                   </div>
                   {/* Tue */}
                   <div className="space-y-2">
                     <div className="text-[10px] text-white/50 text-center mb-1.5 font-semibold">T</div>
-                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(74,222,128,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
+                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(234,179,8,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
                     <div className="h-7 rounded-md bg-white/5"></div>
-                    <div className="h-7 rounded-md bg-primary border border-primary flex items-center justify-center shadow-[0_0_15px_rgba(74,222,128,0.6)] animate-pulse"><Icon icon="lucide:calendar-plus" className="text-black text-[12px]" /></div>
+                    <div className="h-7 rounded-md bg-primary border border-primary flex items-center justify-center shadow-[0_0_15px_rgba(234,179,8,0.6)] animate-pulse"><Icon icon="lucide:calendar-plus" className="text-black text-[12px]" /></div>
                   </div>
                   {/* Wed */}
                   <div className="space-y-2">
                     <div className="text-[10px] text-white/50 text-center mb-1.5 font-semibold">W</div>
-                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(74,222,128,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
-                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(74,222,128,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
+                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(234,179,8,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
+                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(234,179,8,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
                     <div className="h-7 rounded-md bg-white/5 group-hover:bg-primary/20 group-hover:border-primary/40 transition-colors duration-500 delay-300 flex items-center justify-center"><Icon icon="lucide:check" className="text-primary text-[12px] opacity-0 group-hover:opacity-100 transition-opacity delay-500" strokeWidth="3" /></div>
                   </div>
                   {/* Thu */}
                   <div className="space-y-2">
                     <div className="text-[10px] text-white/50 text-center mb-1.5 font-semibold">T</div>
                     <div className="h-7 rounded-md bg-white/5"></div>
-                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(74,222,128,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
-                    <div className="h-7 rounded-md bg-primary border border-primary flex items-center justify-center shadow-[0_0_15px_rgba(74,222,128,0.6)] animate-pulse" style={{animationDelay: '0.5s'}}><Icon icon="lucide:calendar-plus" className="text-black text-[12px]" /></div>
+                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(234,179,8,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
+                    <div className="h-7 rounded-md bg-primary border border-primary flex items-center justify-center shadow-[0_0_15px_rgba(234,179,8,0.6)] animate-pulse" style={{animationDelay: '0.5s'}}><Icon icon="lucide:calendar-plus" className="text-black text-[12px]" /></div>
                   </div>
                   {/* Fri */}
                   <div className="space-y-2">
                     <div className="text-[10px] text-white/50 text-center mb-1.5 font-semibold">F</div>
-                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(74,222,128,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
-                    <div className="h-7 rounded-md bg-white/5 group-hover:bg-primary border-primary group-hover:shadow-[0_0_15px_rgba(74,222,128,0.6)] transition-all duration-500 delay-500 flex items-center justify-center"><Icon icon="lucide:calendar-plus" className="text-black text-[12px] opacity-0 group-hover:opacity-100 transition-opacity delay-700" /></div>
+                    <div className="h-7 rounded-md bg-primary/20 border border-primary/40 flex items-center justify-center shadow-[0_0_10px_rgba(234,179,8,0.2)]"><Icon icon="lucide:check" className="text-primary text-[12px]" strokeWidth="3" /></div>
+                    <div className="h-7 rounded-md bg-white/5 group-hover:bg-primary border-primary group-hover:shadow-[0_0_15px_rgba(234,179,8,0.6)] transition-all duration-500 delay-500 flex items-center justify-center"><Icon icon="lucide:calendar-plus" className="text-black text-[12px] opacity-0 group-hover:opacity-100 transition-opacity delay-700" /></div>
                     <div className="h-7 rounded-md bg-white/5"></div>
                   </div>
                 </div>

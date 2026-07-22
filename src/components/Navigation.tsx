@@ -33,10 +33,10 @@ export const Navigation: React.FC<{
           .header-line-r { right: 68px; } 
         }
       `}</style>
-      <nav className="fixed top-0 left-0 right-0 z-50 h-[72px] bg-[#14221F] border-b border-[#31403E] w-full font-sans">
+      <nav className="fixed top-0 left-0 right-0 z-50 h-[72px] bg-[#000000] border-b border-[#262626] w-full font-sans">
         {/* Side boundary lines */}
-        <div className="absolute top-0 bottom-0 w-px bg-[#31403E] header-line-l pointer-events-none"></div>
-        <div className="absolute top-0 bottom-0 w-px bg-[#31403E] header-line-r pointer-events-none"></div>
+        <div className="absolute top-0 bottom-0 w-px bg-[#262626] header-line-l pointer-events-none"></div>
+        <div className="absolute top-0 bottom-0 w-px bg-[#262626] header-line-r pointer-events-none"></div>
         
         <div className="flex h-full w-full items-center justify-between header-px mx-auto max-w-[1920px]">
           
@@ -48,19 +48,19 @@ export const Navigation: React.FC<{
                 <div className="absolute inset-[-4px] border border-dashed border-primary/30 rounded-full animate-[spin_8s_linear_infinite] group-hover:border-primary/60 transition-colors duration-500">
                 </div>
                 {/* Core Orb */}
-                <div className="bg-gradient-to-br from-primary via-green-500 to-green-700 w-[32px] h-[32px] rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(74,222,128,0.4)] group-hover:shadow-[0_0_20px_rgba(74,222,128,0.7)] relative z-10 transition-all duration-300 group-hover:scale-105">
+                <div className="bg-gradient-to-br from-primary via-yellow-500 to-yellow-700 w-[32px] h-[32px] rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(234,179,8,0.4)] group-hover:shadow-[0_0_20px_rgba(234,179,8,0.7)] relative z-10 transition-all duration-300 group-hover:scale-105">
                   <div className="absolute inset-[2px] bg-black/20 rounded-full blur-[1px]"></div>
                   <Icon icon="lucide:mic" className="text-white text-[16px] relative z-20 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)] group-hover:animate-pulse" />
                 </div>
               </div>
               <div className="flex flex-col justify-center">
                 <span className="font-heading font-black text-white text-[16px] tracking-tight leading-none mb-1">Joopi AI</span>
-                <span className="text-[8px] font-mono text-[#4ade80] uppercase tracking-[0.25em] leading-none opacity-90">AI Sales Agents</span>
+                <span className="text-[8px] font-mono text-[#eab308] uppercase tracking-[0.25em] leading-none opacity-90">AI Sales Agents</span>
               </div>
             </a>
             
             {/* Divider */}
-            <div className="hidden lg:block w-px h-5 bg-[#31403E] mx-8"></div>
+            <div className="hidden lg:block w-px h-5 bg-[#262626] mx-8"></div>
             
             {/* Nav Links */}
             <div className="hidden lg:flex items-center gap-7">
@@ -86,7 +86,7 @@ export const Navigation: React.FC<{
             </button>
             
             {/* Divider */}
-            <div className="hidden sm:block w-px h-5 bg-[#31403E] mx-7"></div>
+            <div className="hidden sm:block w-px h-5 bg-[#262626] mx-7"></div>
             
             {/* Auth Buttons */}
             <a href="#login" className="hidden md:block text-[13.5px] font-bold text-white hover:text-white/80 transition-colors mr-7">Client Login</a>
@@ -110,12 +110,12 @@ export const Navigation: React.FC<{
 
         {/* Mobile Dropdown Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-[72px] left-0 right-0 bg-[#14221F] border-b border-[#31403E] px-6 py-4 flex flex-col gap-4 shadow-xl animate-in slide-in-from-top-2">
-            <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#4ade80] transition-colors py-2 border-b border-white/5">Services</a>
-            <a href="#case-studies" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#4ade80] transition-colors py-2 border-b border-white/5">Case Studies</a>
-            <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#4ade80] transition-colors py-2 border-b border-white/5">Pricing</a>
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#4ade80] transition-colors py-2 border-b border-white/5">Contact</a>
-            <a href="#login" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#4ade80] transition-colors py-2 md:hidden">Client Login</a>
+          <div className="lg:hidden absolute top-[72px] left-0 right-0 bg-[#000000] border-b border-[#262626] px-6 py-4 flex flex-col gap-4 shadow-xl animate-in slide-in-from-top-2">
+            <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#eab308] transition-colors py-2 border-b border-white/5">Services</a>
+            <a href="#case-studies" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#eab308] transition-colors py-2 border-b border-white/5">Case Studies</a>
+            <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#eab308] transition-colors py-2 border-b border-white/5">Pricing</a>
+            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#eab308] transition-colors py-2 border-b border-white/5">Contact</a>
+            <a href="#login" onClick={() => setIsMobileMenuOpen(false)} className="text-[15px] font-bold text-white hover:text-[#eab308] transition-colors py-2 md:hidden">Client Login</a>
           </div>
         )}
       </nav>
