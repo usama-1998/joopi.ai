@@ -41,7 +41,7 @@ export const openRetellWidget = () => {
 
 export const RetellWidget = () => {
   useEffect(() => {
-    let brandingInterval: number | undefined;
+    let observer: MutationObserver | undefined;
 
     if (!document.getElementById("retell-widget")) {
       const script = document.createElement("script");
@@ -77,33 +77,64 @@ export const RetellWidget = () => {
       };
       hideDefaultButton(50);
 
-      brandingInterval = window.setInterval(() => {
+      const initObserver = (retriesLeft: number) => {
         const rootContainer = document.getElementById("retell-widget-root");
         const shadowHost = rootContainer?.firstElementChild;
         if (shadowHost && shadowHost.shadowRoot) {
-          const links = shadowHost.shadowRoot.querySelectorAll('a');
-          links.forEach(link => {
-            if (link.textContent?.includes('Retell') || link.href.includes('retell')) {
-              link.style.display = 'none';
+          
+          const processNode = (node: Node) => {
+            if (node.nodeType === Node.TEXT_NODE) {
+              const text = node.textContent?.trim();
+              if (!text) return;
+              
+              if (text === 'Retell') {
+                node.textContent = 'Joopi AI';
+              } else if (text === 'Your RetellAI assistant') {
+                node.textContent = 'Your AI Sales Agent';
+              } else if (text.includes('Powered by')) {
+                if (node.parentElement) {
+                  node.parentElement.style.display = 'none';
+                }
+              }
+            } else if (node.nodeType === Node.ELEMENT_NODE) {
+              const el = node as HTMLElement;
+              if (el.tagName === 'A' && (el.getAttribute('href')?.includes('retell') || el.textContent?.includes('Retell'))) {
+                el.style.display = 'none';
+              }
+              el.childNodes.forEach(processNode);
             }
+          };
+
+          shadowHost.shadowRoot.childNodes.forEach(processNode);
+
+          observer = new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(processNode);
+              if (mutation.type === 'characterData') {
+                processNode(mutation.target);
+              }
+            });
           });
 
-          const allEls = shadowHost.shadowRoot.querySelectorAll('div, span, p, h1, h2, h3, h4, h5, h6');
-          allEls.forEach(el => {
-            if (el.children.length === 0 && el.textContent) {
-              const text = el.textContent.trim();
-              if (text === 'Retell' || text === 'Your RetellAI assistant' || text.includes('Powered by Retell')) {
-                (el as HTMLElement).style.display = 'none';
-              }
-            }
+          observer.observe(shadowHost.shadowRoot, {
+            childList: true,
+            subtree: true,
+            characterData: true
           });
+          return;
         }
-      }, 500);
+
+        if (retriesLeft > 0) {
+          setTimeout(() => initObserver(retriesLeft - 1), 100);
+        }
+      };
+
+      initObserver(50);
     }
 
     return () => {
-      if (brandingInterval) {
-        window.clearInterval(brandingInterval);
+      if (observer) {
+        observer.disconnect();
       }
       const script = document.getElementById("retell-widget");
       if (script) {
