@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
             Experience effortless scaling with elite AI operations.
           </h2>
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 shrink-0 w-full md:w-auto">
-            <a href="#strategy" className="w-full sm:w-auto bg-white hover:bg-gray-100 text-black font-semibold px-7 py-3.5 rounded-full transition-all flex items-center justify-center gap-2 text-[14px] sm:text-[15px]">
+            <a href="https://cal.com/michael-walding/joopi-30-min-event" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-white hover:bg-gray-100 text-black font-semibold px-7 py-3.5 rounded-full transition-all flex items-center justify-center gap-2 text-[14px] sm:text-[15px]">
               Book Strategy Call
               <span className="text-[10px] ml-1">▶</span>
             </a>

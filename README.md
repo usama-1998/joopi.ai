@@ -88,3 +88,4 @@ A `netlify.toml` file is included in the root directory to handle SPA redirects 
 - **2026-07-28**: Adjusted HeroSection UI to move the interactive voice mic icon closer to the main header text.
 - **2026-07-28**: Customized the Retell AI voice widget with custom CSS injection and data attributes to match the website's dark yellow theme.
 - **2026-07-28**: Enabled Retell AI hybrid mode (Voice + Chat) by adding the chat agent configuration to the widget script.
+- **2026-07-28**: Updated booking links across the site to point to the external Cal.com event page.

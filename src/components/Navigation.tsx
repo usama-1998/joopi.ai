@@ -90,10 +90,10 @@ export const Navigation: React.FC<{
             
             {/* Auth Buttons */}
             <a href="#login" className="hidden md:block text-[13.5px] font-bold text-white hover:text-white/80 transition-colors mr-7">Client Login</a>
-            <a href="#demo" className="bg-white text-black hover:bg-gray-100 text-[13.5px] font-bold px-5 py-2.5 rounded-full transition-all hidden sm:flex items-center gap-1">
+            <a href="https://cal.com/michael-walding/joopi-30-min-event" target="_blank" rel="noopener noreferrer" className="bg-white text-black hover:bg-gray-100 text-[13.5px] font-bold px-5 py-2.5 rounded-full transition-all hidden sm:flex items-center gap-1">
               Book Strategy Call <span className="text-[9px] ml-0.5">▶</span>
             </a>
-            <a href="#demo" className="bg-white text-black hover:bg-gray-100 text-[12px] font-bold px-4 py-2 rounded-full transition-all sm:hidden flex items-center gap-1 ml-4">
+            <a href="https://cal.com/michael-walding/joopi-30-min-event" target="_blank" rel="noopener noreferrer" className="bg-white text-black hover:bg-gray-100 text-[12px] font-bold px-4 py-2 rounded-full transition-all sm:hidden flex items-center gap-1 ml-4">
               Book Call
             </a>
 
