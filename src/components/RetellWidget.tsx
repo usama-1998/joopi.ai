@@ -41,6 +41,8 @@ export const openRetellWidget = () => {
 
 export const RetellWidget = () => {
   useEffect(() => {
+    let brandingInterval: number | undefined;
+
     if (!document.getElementById("retell-widget")) {
       const script = document.createElement("script");
       script.id = "retell-widget";
@@ -74,9 +76,35 @@ export const RetellWidget = () => {
         }
       };
       hideDefaultButton(50);
+
+      brandingInterval = window.setInterval(() => {
+        const rootContainer = document.getElementById("retell-widget-root");
+        const shadowHost = rootContainer?.firstElementChild;
+        if (shadowHost && shadowHost.shadowRoot) {
+          const links = shadowHost.shadowRoot.querySelectorAll('a');
+          links.forEach(link => {
+            if (link.textContent?.includes('Retell') || link.href.includes('retell')) {
+              link.style.display = 'none';
+            }
+          });
+
+          const allEls = shadowHost.shadowRoot.querySelectorAll('div, span, p, h1, h2, h3, h4, h5, h6');
+          allEls.forEach(el => {
+            if (el.children.length === 0 && el.textContent) {
+              const text = el.textContent.trim();
+              if (text === 'Retell' || text === 'Your RetellAI assistant' || text.includes('Powered by Retell')) {
+                (el as HTMLElement).style.display = 'none';
+              }
+            }
+          });
+        }
+      }, 500);
     }
 
     return () => {
+      if (brandingInterval) {
+        window.clearInterval(brandingInterval);
+      }
       const script = document.getElementById("retell-widget");
       if (script) {
         script.remove();
