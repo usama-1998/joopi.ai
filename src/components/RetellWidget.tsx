@@ -27,12 +27,20 @@ const clickVoiceAssistant = () => {
         if (clickable) {
           (clickable as HTMLElement).click();
         }
+        
+        // Restore opacity after the transition to hide the flash
+        setTimeout(() => {
+          if (rootContainer) rootContainer.style.opacity = '1';
+        }, 50);
         return;
       }
     }
     
     if (retries > 0) {
       setTimeout(() => clickIt(retries - 1), 50);
+    } else {
+      // In case of failure, restore opacity anyway so it doesn't stay hidden forever
+      if (rootContainer) rootContainer.style.opacity = '1';
     }
   };
   
@@ -40,14 +48,16 @@ const clickVoiceAssistant = () => {
 };
 
 export const openRetellWidget = () => {
+  const rootContainer = document.getElementById("retell-widget-root");
+  
   if (retellButtonCache) {
+    if (rootContainer) rootContainer.style.opacity = '0';
     retellButtonCache.click();
     clickVoiceAssistant();
     return;
   }
 
   const findAndClick = (retriesLeft: number) => {
-    const rootContainer = document.getElementById("retell-widget-root");
     const shadowHost = rootContainer?.firstElementChild;
 
     if (shadowHost && shadowHost.shadowRoot) {
@@ -55,6 +65,7 @@ export const openRetellWidget = () => {
       const button = shadowHost.shadowRoot.querySelector('button[aria-label="Open Assistant"], button[aria-label="Close assistant"], button');
       if (button) {
         retellButtonCache = button as HTMLElement;
+        if (rootContainer) rootContainer.style.opacity = '0';
         retellButtonCache.click();
         clickVoiceAssistant();
         return;
@@ -94,6 +105,9 @@ export const RetellWidget = () => {
       // Customize colors to match the website theme
       script.setAttribute("data-theme-color", "#0a0a0a"); // Background dark color
       script.setAttribute("data-component-color", "#000000"); // Black component accent
+      
+      // Hide the Retell logo using a transparent 1x1 pixel
+      script.setAttribute("data-logo-url", "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
       
       document.body.appendChild(script);
 
