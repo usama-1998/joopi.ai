@@ -13,9 +13,12 @@ export const openRetellWidget = () => {
   }
 
   const findAndClick = (retriesLeft: number) => {
-    const root = document.getElementById("retell-widget-root");
-    if (root && root.shadowRoot) {
-      const button = root.shadowRoot.querySelector('button[aria-label="Open Assistant"], button[aria-label="Close assistant"]');
+    const rootContainer = document.getElementById("retell-widget-root");
+    const shadowHost = rootContainer?.firstElementChild;
+
+    if (shadowHost && shadowHost.shadowRoot) {
+      // First try to find by known labels, otherwise just get the first button
+      const button = shadowHost.shadowRoot.querySelector('button[aria-label="Open Assistant"], button[aria-label="Close assistant"], button');
       if (button) {
         retellButtonCache = button as HTMLElement;
         retellButtonCache.click();
@@ -27,6 +30,9 @@ export const openRetellWidget = () => {
       setTimeout(() => findAndClick(retriesLeft - 1), 100);
     } else {
       console.warn("Retell widget button not found. The internal markup might have changed.");
+      if (shadowHost && shadowHost.shadowRoot) {
+        console.warn("Shadow DOM contents:", shadowHost.shadowRoot.innerHTML);
+      }
     }
   };
 
@@ -46,9 +52,11 @@ export const RetellWidget = () => {
 
       // Inject a <style> element to hide the default launcher button
       const hideDefaultButton = (retriesLeft: number) => {
-        const root = document.getElementById("retell-widget-root");
-        if (root && root.shadowRoot) {
-          if (!root.shadowRoot.getElementById("retell-custom-style")) {
+        const rootContainer = document.getElementById("retell-widget-root");
+        const shadowHost = rootContainer?.firstElementChild;
+
+        if (shadowHost && shadowHost.shadowRoot) {
+          if (!shadowHost.shadowRoot.getElementById("retell-custom-style")) {
             const style = document.createElement("style");
             style.id = "retell-custom-style";
             style.textContent = `
@@ -56,7 +64,7 @@ export const RetellWidget = () => {
                 display: none !important;
               }
             `;
-            root.shadowRoot.appendChild(style);
+            shadowHost.shadowRoot.appendChild(style);
           }
           return;
         }
