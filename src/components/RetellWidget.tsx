@@ -6,9 +6,43 @@ import { useEffect } from 'react';
 
 let retellButtonCache: HTMLElement | null = null;
 
+const clickVoiceAssistant = () => {
+  const clickIt = (retries: number) => {
+    const rootContainer = document.getElementById("retell-widget-root");
+    const shadowHost = rootContainer?.firstElementChild;
+    if (shadowHost && shadowHost.shadowRoot) {
+      const walker = document.createTreeWalker(shadowHost.shadowRoot, NodeFilter.SHOW_TEXT);
+      let node;
+      let voiceBtn = null;
+      while ((node = walker.nextNode())) {
+        if (node.textContent?.trim() === "Voice Assistant") {
+          voiceBtn = node.parentElement;
+          break;
+        }
+      }
+      
+      if (voiceBtn) {
+        // Find the closest clickable container (button or div) to trigger the action
+        const clickable = voiceBtn.closest('button') || voiceBtn.closest('[role="button"]') || voiceBtn.closest('div[tabindex]') || voiceBtn.parentElement;
+        if (clickable) {
+          (clickable as HTMLElement).click();
+        }
+        return;
+      }
+    }
+    
+    if (retries > 0) {
+      setTimeout(() => clickIt(retries - 1), 50);
+    }
+  };
+  
+  clickIt(40); // Poll for up to 2 seconds
+};
+
 export const openRetellWidget = () => {
   if (retellButtonCache) {
     retellButtonCache.click();
+    clickVoiceAssistant();
     return;
   }
 
@@ -22,6 +56,7 @@ export const openRetellWidget = () => {
       if (button) {
         retellButtonCache = button as HTMLElement;
         retellButtonCache.click();
+        clickVoiceAssistant();
         return;
       }
     }
