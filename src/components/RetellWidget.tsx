@@ -53,7 +53,7 @@ export const RetellWidget = () => {
       
       // Customize colors to match the website theme
       script.setAttribute("data-theme-color", "#0a0a0a"); // Background dark color
-      script.setAttribute("data-component-color", "#eab308"); // Primary yellow accent
+      script.setAttribute("data-component-color", "#000000"); // Black component accent
       
       document.body.appendChild(script);
 
