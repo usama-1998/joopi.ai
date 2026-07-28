@@ -52,7 +52,7 @@ export const RetellWidget = () => {
       script.setAttribute("data-voice-agent-id", "agent_ef7aa1360c2423cea198b36f16");
       
       // Chat agent attributes
-      script.setAttribute("data-public-key", "YOUR_PUBLIC_KEY_HERE");
+      script.setAttribute("data-public-key", "public_key_dd0f5bf2461eed1bf27d3");
       script.setAttribute("data-agent-id", "agent_14a7ff5684470c6027d39e2710");
       script.setAttribute("data-title", "Joopi AI");
       
