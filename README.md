@@ -82,3 +82,7 @@ A `netlify.toml` file is included in the root directory to handle SPA redirects 
 ## 📝 License
 
 © 2026 Joopi AI · All rights reserved.
+
+## 🔄 Changelog
+
+- **2026-07-28**: Adjusted HeroSection UI to move the interactive voice mic icon closer to the main header text.
