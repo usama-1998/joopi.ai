@@ -4,7 +4,7 @@ import { openRetellWidget } from './RetellWidget';
 
 export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFreeClick }) => {
   return (
-    <div className="max-w-4xl mx-auto text-center relative z-10 pt-8 px-4">
+    <div className="max-w-4xl mx-auto text-center relative z-10 px-4">
 
       <div className="flex flex-col justify-center items-center mb-4 transform scale-90 sm:scale-100">
         <div className="relative flex items-center justify-center w-36 h-36 group perspective-1000">

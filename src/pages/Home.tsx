@@ -44,7 +44,7 @@ const Home: React.FC = () => {
         onLanguageChange={handleLanguageChange} 
       />
 
-      <header className="relative border-b border-border bg-card px-6 pt-16 lg:pt-24 pb-16 overflow-hidden">
+      <header className="relative border-b border-border bg-card px-6 pt-6 lg:pt-8 pb-16 overflow-hidden">
         {/* Local decorative patterns moved to root */}
 
         <HeroSection onTryFreeClick={scrollToWorkspace} />
