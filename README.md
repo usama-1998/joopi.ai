@@ -86,3 +86,4 @@ A `netlify.toml` file is included in the root directory to handle SPA redirects 
 ## 🔄 Changelog
 
 - **2026-07-28**: Adjusted HeroSection UI to move the interactive voice mic icon closer to the main header text.
+- **2026-07-28**: Customized the Retell AI voice widget with custom CSS injection and data attributes to match the website's dark yellow theme.
