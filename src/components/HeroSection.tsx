@@ -6,7 +6,7 @@ export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFre
   return (
     <div className="max-w-4xl mx-auto text-center relative z-10 pt-8 px-4">
 
-      <div className="flex flex-col justify-center items-center mb-10 transform scale-90 sm:scale-100">
+      <div className="flex flex-col justify-center items-center -mb-4 sm:mb-10 transform scale-90 sm:scale-100">
         <div className="relative flex items-center justify-center w-36 h-36 group perspective-1000">
           {/* Outer glow */}
           <div className="absolute inset-0 bg-primary/10 rounded-full blur-[40px] group-hover:bg-primary/30 transition-colors duration-1000"></div>
