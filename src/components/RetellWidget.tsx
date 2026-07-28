@@ -1,0 +1,85 @@
+import { useEffect } from 'react';
+
+// NOTE: The shadow-DOM structure and aria-label are undocumented internals 
+// of Retell's widget (no official public API as of now). Verified by 
+// inspection and may require updates if Retell changes their internal markup.
+
+let retellButtonCache: HTMLElement | null = null;
+
+export const openRetellWidget = () => {
+  if (retellButtonCache) {
+    retellButtonCache.click();
+    return;
+  }
+
+  const findAndClick = (retriesLeft: number) => {
+    const root = document.getElementById("retell-widget-root");
+    if (root && root.shadowRoot) {
+      const button = root.shadowRoot.querySelector('button[aria-label="Open Assistant"], button[aria-label="Close assistant"]');
+      if (button) {
+        retellButtonCache = button as HTMLElement;
+        retellButtonCache.click();
+        return;
+      }
+    }
+
+    if (retriesLeft > 0) {
+      setTimeout(() => findAndClick(retriesLeft - 1), 100);
+    } else {
+      console.warn("Retell widget button not found. The internal markup might have changed.");
+    }
+  };
+
+  findAndClick(50); // 50 * 100ms = 5 seconds
+};
+
+export const RetellWidget = () => {
+  useEffect(() => {
+    if (!document.getElementById("retell-widget")) {
+      const script = document.createElement("script");
+      script.id = "retell-widget";
+      script.src = "https://dashboard.retellai.com/retell-widget-v2.js";
+      script.type = "module";
+      script.setAttribute("data-voice-public-key", "public_key_dd0f5bf2461eed1bf27d3");
+      script.setAttribute("data-voice-agent-id", "agent_ef7aa1360c2423cea198b36f16");
+      document.body.appendChild(script);
+
+      // Inject a <style> element to hide the default launcher button
+      const hideDefaultButton = (retriesLeft: number) => {
+        const root = document.getElementById("retell-widget-root");
+        if (root && root.shadowRoot) {
+          if (!root.shadowRoot.getElementById("retell-custom-style")) {
+            const style = document.createElement("style");
+            style.id = "retell-custom-style";
+            style.textContent = `
+              button[aria-label="Open Assistant"] {
+                display: none !important;
+              }
+            `;
+            root.shadowRoot.appendChild(style);
+          }
+          return;
+        }
+
+        if (retriesLeft > 0) {
+          setTimeout(() => hideDefaultButton(retriesLeft - 1), 100);
+        }
+      };
+      hideDefaultButton(50);
+    }
+
+    return () => {
+      const script = document.getElementById("retell-widget");
+      if (script) {
+        script.remove();
+      }
+      
+      const root = document.getElementById("retell-widget-root");
+      if (root) {
+        root.remove();
+      }
+    };
+  }, []);
+
+  return null;
+};

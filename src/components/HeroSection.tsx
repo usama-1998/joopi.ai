@@ -1,5 +1,6 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
+import { openRetellWidget } from './RetellWidget';
 
 export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFreeClick }) => {
   return (
@@ -25,7 +26,10 @@ export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFre
           </div>
 
           {/* Core Orb */}
-          <div className="relative w-[72px] h-[72px] bg-gradient-to-br from-primary via-yellow-500 to-yellow-700 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(234,179,8,0.6)] z-10 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(234,179,8,0.8)] transition-all duration-500 transform-style-3d">
+          <div 
+            onClick={openRetellWidget}
+            className="relative w-[72px] h-[72px] bg-gradient-to-br from-primary via-yellow-500 to-yellow-700 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(234,179,8,0.6)] z-10 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(234,179,8,0.8)] transition-all duration-500 transform-style-3d cursor-pointer"
+          >
             <div className="absolute inset-1 bg-black/20 rounded-full blur-[2px]"></div>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.4),transparent)] rounded-full"></div>
             <Icon icon="lucide:mic" className="text-white text-3xl relative z-10 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:animate-pulse" />
@@ -70,7 +74,10 @@ export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFre
 
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-20">
         <button 
-          onClick={onTryFreeClick}
+          onClick={(e) => {
+            openRetellWidget();
+            if (onTryFreeClick) onTryFreeClick();
+          }}
           className="w-full sm:w-auto bg-white text-black hover:bg-gray-100 font-semibold text-[15px] px-8 py-3.5 rounded-full transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl shadow-white/5"
         >
           View Live Demo

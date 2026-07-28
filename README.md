@@ -30,6 +30,7 @@ src/
 ├── components/          # Reusable UI blocks and page sections
 │   ├── Navigation.tsx   # Header with custom responsive menu & animated mic logo
 │   ├── HeroSection.tsx  # Main hero with CTA, features, and 3D AI Core graphic
+│   ├── RetellWidget.tsx # Retell AI voice widget integration & custom trigger logic
 │   ├── LogoCloud.tsx    # Trusted clients and integrations section
 │   ├── UseCases.tsx     # Services grid with custom CSS visuals (Alex & Jennifer)
 │   ├── ScrollingFeatures.tsx # Zig-zag layout with custom interactive UI mockups
