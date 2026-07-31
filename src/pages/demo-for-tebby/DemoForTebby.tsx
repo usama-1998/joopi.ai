@@ -3,13 +3,13 @@ import { Icon } from '@iconify/react';
 import type { FormField } from '../../types';
 import { Navigation } from '../../components/Navigation';
 import { HeroSection } from './HeroSection';
-import { LogoCloud } from '../../components/LogoCloud';
+import { LogoCloud } from './LogoCloud';
 import { UseCases } from './UseCases';
 import { ScrollingFeatures } from './ScrollingFeatures';
-import { WorkflowSteps } from '../../components/WorkflowSteps';
-import { Testimonial } from '../../components/Testimonial';
+import { WorkflowSteps } from './WorkflowSteps';
+import { Testimonial } from './Testimonial';
 import { FAQAccordion } from './FAQAccordion';
-import { PopularForms } from '../../components/PopularForms';
+import { PopularForms } from './PopularForms';
 import { Footer } from '../../components/Footer';
 
 const DemoForTebby: React.FC = () => {
@@ -93,7 +93,7 @@ const DemoForTebby: React.FC = () => {
                 onClick={scrollToWorkspace}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full transition-all inline-flex items-center gap-2 cursor-pointer"
               >
-                Start Scaling with Joopi AI
+                Start Reactivating Leads Today
                 <Icon icon="lucide:arrow-right" className="text-lg" />
               </button>
           </div>
