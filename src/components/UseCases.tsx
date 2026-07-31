@@ -153,7 +153,7 @@ export const UseCases: React.FC = () => {
     {
       title: "Direct CRM Integration",
       outcome: "Done-For-You Setup",
-      description: "Everything syncs to your CRM. We manage the infrastructure to ensure your data stays current, accurate, and actionable.",
+      description: "Everything syncs directly to the CRM, where you can view all the data at once. You have full access to view everything whenever you want.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full perspective-[800px]">
           {/* Glowing aura */}
