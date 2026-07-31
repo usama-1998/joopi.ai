@@ -47,7 +47,7 @@ export const UseCases: React.FC = () => {
     {
       title: "Emma: AI Voice Agent",
       outcome: "24/7 Phone Coverage",
-      description: "Emma handles inbound and outbound calls flawlessly. She qualifies leads, handles objections, and books meetings directly into your reps' calendars.",
+      description: "Emma handles inbound and outbound calls flawlessly. She qualifies leads, handles objections, and books meetings directly into your calendar.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full">
           {/* Glowing aura */}
