@@ -8,8 +8,8 @@ export const FAQAccordion: React.FC<{
 }> = ({ activeFaqIndex, onToggleFaq }) => {
   const faqs: FAQItem[] = [
     {
-      question: "What exactly is Sarah?",
-      answer: "Sarah is a specialized AI front desk coordinator built for Radiance Dermatology. She is designed to call past leads who inquired about treatments like Botox or laser but never booked, helping to win them back naturally."
+      question: "What is this demo?",
+      answer: "This is a demonstration of an outbound AI agent designed to reactivate old leads for physician practices, using a dermatology clinic as a specific example. Sarah is a specialized AI front desk coordinator designed to call past leads who inquired about treatments but never booked."
     },
     {
       question: "How does Sarah sound on the phone?",

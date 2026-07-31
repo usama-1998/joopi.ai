@@ -42,13 +42,12 @@ export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFre
       </div>
       
       <h1 className="font-heading text-4xl sm:text-5xl md:text-[62px] leading-tight md:leading-[60px] font-bold tracking-tight mb-6 text-white">
-        Meet Sarah, Your AI <br className="hidden sm:block" />
-        <span className="text-[#eab308]">Front Desk Coordinator</span>
+        AI Outbound Agents for <br className="hidden sm:block" />
+        <span className="text-[#eab308]">Physician Practices</span>
       </h1>
       
       <p className="text-base sm:text-[18px] leading-relaxed md:leading-[28px] text-white/90 max-w-3xl mx-auto mb-6 px-2">
-        Custom built for Radiance Dermatology. Sarah calls old leads who inquired about treatments but never booked. <br className="hidden md:block" /> 
-        She follows up with a natural, friendly conversation to gently win them back.
+        Reactivate your old leads on autopilot. Listen to a live demo of our AI agent calling past patients to book new appointments (featuring a Dermatology clinic example).
       </p>
 
       <div className="w-full max-w-[90%] mx-auto h-[2px] mb-8 bg-[repeating-linear-gradient(90deg,transparent,transparent_6px,rgba(255,255,255,0.3)_6px,rgba(255,255,255,0.3)_8px)]" style={{ maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)' }}></div>

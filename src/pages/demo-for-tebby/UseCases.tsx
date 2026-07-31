@@ -195,15 +195,15 @@ export const UseCases: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 mb-12 lg:mb-20">
           <div className="max-w-2xl">
-            <p className="font-mono text-[13px] font-semibold uppercase tracking-widest text-white/60 mb-4 lg:mb-6">Clinic Solution</p>
+            <p className="font-mono text-[13px] font-semibold uppercase tracking-widest text-white/60 mb-4 lg:mb-6">Lead Reactivation</p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-[44px] font-bold leading-[1.15] text-white tracking-tight">
-              AI Front Desk<br/>
-              Coordinator.
+              Reactivate Old Leads<br/>
+              On Autopilot.
             </h2>
           </div>
           <div className="lg:w-[480px] lg:pt-14">
             <p className="text-[15px] md:text-[16px] text-white/80 leading-relaxed">
-              We build specialized AI agents for Med Spas and Dermatology clinics. Sarah works around the clock to re-engage past leads and book consultations, allowing your staff to focus on in-clinic patients.
+              We build specialized outbound AI agents for physicians. They work around the clock to re-engage past leads and book appointments, allowing your staff to focus on in-clinic patients.
             </p>
           </div>
         </div>
