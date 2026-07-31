@@ -42,12 +42,12 @@ export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFre
       </div>
       
       <h1 className="font-heading text-4xl sm:text-5xl md:text-[62px] leading-tight md:leading-[60px] font-bold tracking-tight mb-6 text-white">
-        AI-Powered Sales Agents to <br className="hidden sm:block" />
+        AI-Powered Agents to <br className="hidden sm:block" />
         <span className="text-[#eab308]">Scale Effortlessly</span>
       </h1>
       
       <p className="text-base sm:text-[18px] leading-relaxed md:leading-[28px] text-white/90 max-w-3xl mx-auto mb-6 px-2">
-        Joopi AI's agents, Alex (voice) and Jennifer (SMS), handle your leads 24/7. <br className="hidden md:block" /> 
+        Joopi AI's agents, Emma (voice) and Jennifer (SMS), handle your leads 24/7. <br className="hidden md:block" /> 
         They qualify leads, handle objections, and book meetings directly into your reps' calendars.
       </p>
 

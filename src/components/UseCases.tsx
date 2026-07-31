@@ -45,9 +45,9 @@ const UseCaseCard: React.FC<UseCaseData> = ({ title, outcome, description, visua
 export const UseCases: React.FC = () => {
   const cases: UseCaseData[] = [
     {
-      title: "Alex: AI Voice Agent",
-      outcome: "24/7 Call Coverage",
-      description: "Alex handles inbound and outbound calls flawlessly. He qualifies leads, handles objections, and books meetings directly into your reps' calendars.",
+      title: "Emma: AI Voice Agent",
+      outcome: "24/7 Phone Coverage",
+      description: "Emma handles inbound and outbound calls flawlessly. She qualifies leads, handles objections, and books meetings directly into your reps' calendars.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full">
           {/* Glowing aura */}
@@ -116,7 +116,7 @@ export const UseCases: React.FC = () => {
     {
       title: "Automated Objection Handling",
       outcome: "Higher Conversion Rates",
-      description: "Our agents are trained to overcome standard sales objections gracefully, ensuring more prospects make it to a booked meeting.",
+      description: "Our agents are trained to overcome standard objections gracefully, ensuring more prospects make it to a booked meeting.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full">
           {/* Glowing aura */}
@@ -153,7 +153,7 @@ export const UseCases: React.FC = () => {
     {
       title: "Direct CRM Integration",
       outcome: "Done-For-You Setup",
-      description: "Everything syncs directly to HubSpot, Salesforce, Close, and more. We build and manage the entire infrastructure so you don't have to lift a finger.",
+      description: "Everything syncs to your CRM. We manage the infrastructure to ensure your data stays current, accurate, and actionable.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full perspective-[800px]">
           {/* Glowing aura */}
@@ -197,13 +197,13 @@ export const UseCases: React.FC = () => {
           <div className="max-w-2xl">
             <p className="font-mono text-[13px] font-semibold uppercase tracking-widest text-white/60 mb-4 lg:mb-6">Our Services</p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-[44px] font-bold leading-[1.15] text-white tracking-tight">
-              AI Sales Agents<br/>
+              AI Agents<br/>
               Working 24/7.
             </h2>
           </div>
           <div className="lg:w-[480px] lg:pt-14">
             <p className="text-[15px] md:text-[16px] text-white/80 leading-relaxed">
-              We handle the entire setup and integration of your AI sales agents. Alex and Jennifer work around the clock to qualify leads and book meetings, so your human reps can focus entirely on closing deals.
+              We handle the entire setup and integration of your AI agents. Emma and Jennifer work around the clock to qualify leads and book meetings, so your doctors can focus entirely on their patients.
             </p>
           </div>
         </div>

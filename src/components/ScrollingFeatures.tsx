@@ -8,9 +8,9 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
   const features = [
     {
       badgeIcon: "lucide:phone-call",
-      badgeText: "Alex: Voice Agent",
+      badgeText: "Emma: Voice Agent",
       title: "Never Miss Another Call",
-      description: "Alex instantly answers or texts back missed calls, engages the prospect in natural conversation, qualifies them, and books them directly onto your calendar.",
+      description: "Emma instantly answers or texts back missed calls, engages the prospect in natural conversation, qualifies them, and books them directly onto your calendar.",
       ctaText: "See Voice Agent",
       ctaHref: "#receptionist",
       visual: (
@@ -29,7 +29,7 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
                  {/* Ripple effect */}
                  <div className="absolute inset-0 rounded-full border border-primary/50 animate-[ping_2s_infinite]"></div>
                </div>
-               <h3 className="text-white text-lg font-semibold tracking-wide">Alex (Joopi AI)</h3>
+               <h3 className="text-white text-lg font-semibold tracking-wide">Emma (Joopi AI)</h3>
                <p className="text-primary text-xs font-mono mt-1 animate-pulse">00:04:12</p>
             </div>
 
@@ -241,7 +241,7 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
       badgeIcon: "lucide:layers",
       badgeText: "CRM Integration",
       title: "Syncs Seamlessly",
-      description: "Alex and Jennifer connect directly to HubSpot, Salesforce, Close, and your calendar. Every call transcript and booked meeting is logged automatically.",
+      description: "Emma and Jennifer connect directly to the CRM, where you can view all the data at once. Every call transcript and booked appointment is logged automatically.",
       ctaText: "Explore Integrations",
       ctaHref: "#integrations",
       visual: (

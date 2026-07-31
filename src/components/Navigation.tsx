@@ -55,7 +55,7 @@ export const Navigation: React.FC<{
               </div>
               <div className="flex flex-col justify-center">
                 <span className="font-heading font-black text-white text-[16px] tracking-tight leading-none mb-1">Joopi AI</span>
-                <span className="text-[8px] font-mono text-[#eab308] uppercase tracking-[0.25em] leading-none opacity-90">AI Sales Agents</span>
+                <span className="text-[8px] font-mono text-[#eab308] uppercase tracking-[0.25em] leading-none opacity-90">AI Agents</span>
               </div>
             </a>
             

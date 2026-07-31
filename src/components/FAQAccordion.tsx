@@ -8,12 +8,12 @@ export const FAQAccordion: React.FC<{
 }> = ({ activeFaqIndex, onToggleFaq }) => {
   const faqs: FAQItem[] = [
     {
-      question: "What exactly is Joopi AI?",
-      answer: "Joopi AI provides AI-powered sales agents—Alex for voice calls and Jennifer for SMS. They act as an extension of your sales team, handling leads 24/7, qualifying them, and booking meetings directly into your CRM."
+      question: "What exactly does Joopi AI do?",
+      answer: "Joopi AI provides AI-powered agents—Emma for voice calls and Jennifer for SMS. They act as an extension of your team, handling leads 24/7, qualifying them, and booking meetings directly into your CRM."
     },
     {
-      question: "How does Alex, the Voice Agent, work?",
-      answer: "Alex handles inbound and outbound calls flawlessly. He engages prospects in a natural, human-like conversation to answer their questions, handle standard objections, and book them directly onto your calendar."
+      question: "How does Emma, the Voice Agent, work?",
+      answer: "Emma handles inbound and outbound calls flawlessly. She engages prospects in a natural, human-like conversation to answer their questions, handle standard objections, and book them directly onto your calendar."
     },
     {
       question: "Do I have to set this up myself?",

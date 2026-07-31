@@ -62,7 +62,7 @@ export const Footer: React.FC = () => {
             <div>
               <h4 className="text-foreground font-bold text-[12px] mb-6 tracking-wider uppercase">Services</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">Alex Voice Agent</a></li>
+                <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">Emma Voice Agent</a></li>
                 <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">Jennifer SMS Agent</a></li>
                 <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">Lead Qualification</a></li>
                 <li><a href="#" className="text-[14px] text-muted-foreground hover:text-foreground transition-colors">CRM Integration</a></li>

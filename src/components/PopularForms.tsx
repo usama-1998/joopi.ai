@@ -44,7 +44,7 @@ export const PopularForms: React.FC = () => {
               Simple Pricing, <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-500">Done For You</span>
             </h2>
             <p className="text-[16px] md:text-[18px] text-white/70 max-w-2xl leading-relaxed mt-2">
-              We offer transparent pricing that scales with your business. Choose a plan, and our team will build, integrate, and manage your AI sales agents from day one.
+              We offer transparent pricing that scales with your business. Choose a plan, and our team will build, integrate, and manage your AI agents from day one.
             </p>
           </div>
 
@@ -94,7 +94,7 @@ export const PopularForms: React.FC = () => {
               <ul className="space-y-4 mb-10 flex-1">
                 <li className="flex items-start gap-3">
                   <Icon icon="lucide:check-circle-2" className="text-primary text-lg shrink-0 mt-0.5" />
-                  <span className="text-[14.5px] text-white/80">Alex Voice Agent (Basic)</span>
+                  <span className="text-[14.5px] text-white/80">Emma Voice Agent (Basic)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Icon icon="lucide:check-circle-2" className="text-primary text-lg shrink-0 mt-0.5" />
@@ -145,7 +145,7 @@ export const PopularForms: React.FC = () => {
               <ul className="space-y-4 mb-10 flex-1">
                 <li className="flex items-start gap-3">
                   <Icon icon="lucide:check-circle-2" className="text-primary text-lg shrink-0 mt-0.5" />
-                  <span className="text-[14.5px] text-white">Alex & Jennifer (Advanced)</span>
+                  <span className="text-[14.5px] text-white">Emma & Jennifer (Advanced)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Icon icon="lucide:check-circle-2" className="text-primary text-lg shrink-0 mt-0.5" />
