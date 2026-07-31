@@ -103,7 +103,7 @@ export const RetellWidget = () => {
         // Tebby Demo (Outbound Calling Agent Only)
         script.setAttribute("data-voice-public-key", "public_key_dd0f5bf2461eed1bf27d3");
         script.setAttribute("data-voice-agent-id", "agent_ad8915378a18cd89457511bee1");
-        script.setAttribute("data-title", "Radiance Dermatology");
+        script.setAttribute("data-title", "Physician Outbound Agent");
       } else {
         // Default Joopi AI Hybrid Agent
         script.setAttribute("data-voice-public-key", "public_key_dd0f5bf2461eed1bf27d3");
@@ -158,9 +158,9 @@ export const RetellWidget = () => {
               if (!text) return;
               
               if (text === 'Retell') {
-                node.textContent = isTebbyDemo ? 'Radiance Dermatology' : 'Joopi AI';
+                node.textContent = isTebbyDemo ? 'Physician Outbound Agent' : 'Joopi AI';
               } else if (text === 'Your RetellAI assistant') {
-                node.textContent = isTebbyDemo ? 'Front Desk Coordinator' : 'Your AI Sales Agent';
+                node.textContent = isTebbyDemo ? 'Lead Reactivation Demo' : 'Your AI Sales Agent';
               } else if (text.includes('Powered by')) {
                 if (node.parentElement) {
                   node.parentElement.style.display = 'none';
