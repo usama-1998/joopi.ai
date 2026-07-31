@@ -28,10 +28,10 @@ export const WorkflowSteps: React.FC = () => {
             <div className="flex-1 text-left">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-10 h-10 rounded-full bg-white text-[#0a0a0a] flex items-center justify-center font-bold text-xl shadow-lg">1</div>
-                <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">We Analyze Your Bottlenecks</h3>
+                <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">Database Reactivation</h3>
               </div>
               <p className="text-[17px] text-white/70 leading-relaxed md:ml-14">
-                We map out your current sales process, CRM setup, and lead flow to identify where you're losing money and wasting time. Our experts pinpoint the exact automations that will yield the highest ROI for your specific practice.
+                We take your list of old leads and turn them into paying customers again. No complex bottleneck analysis needed—just straight to reactivation.
               </p>
             </div>
             {/* Visual Side */}

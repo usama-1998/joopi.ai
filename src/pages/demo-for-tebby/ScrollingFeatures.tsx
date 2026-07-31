@@ -241,7 +241,7 @@ export const ScrollingFeatures: React.FC<{ onActionClick: () => void }> = ({ onA
       badgeIcon: "lucide:layers",
       badgeText: "CRM Integration",
       title: "Syncs Seamlessly",
-      description: "Sarah connects directly to your clinic's scheduling software. Every call transcript and booked appointment is logged automatically.",
+      description: "Sarah connects directly to our CRM. Every call transcript and booked appointment is logged automatically.",
       ctaText: "Explore Integrations",
       ctaHref: "#integrations",
       visual: (

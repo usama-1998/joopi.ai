@@ -3,13 +3,11 @@ import { Icon } from '@iconify/react';
 import type { FormField } from '../../types';
 import { Navigation } from '../../components/Navigation';
 import { HeroSection } from './HeroSection';
-import { LogoCloud } from './LogoCloud';
 import { UseCases } from './UseCases';
 import { ScrollingFeatures } from './ScrollingFeatures';
 import { WorkflowSteps } from './WorkflowSteps';
 import { Testimonial } from './Testimonial';
 import { FAQAccordion } from './FAQAccordion';
-import { PopularForms } from './PopularForms';
 import { Footer } from '../../components/Footer';
 
 const DemoForTebby: React.FC = () => {
@@ -50,8 +48,6 @@ const DemoForTebby: React.FC = () => {
         <HeroSection onTryFreeClick={scrollToWorkspace} />
       </header>
 
-      <LogoCloud />
-
       <UseCases />
 
       {/* Scrolling Features Section */}
@@ -65,27 +61,27 @@ const DemoForTebby: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div className="space-y-3">
               <h3 className="font-heading text-lg font-bold flex items-center gap-2">
-                <Icon icon="lucide:clock" className="text-primary" />24/7 Availability
+                <Icon icon="lucide:database" className="text-primary" />Database Reactivation
               </h3>
-              <p className="text-sm text-muted-foreground">Our AI agents work around the clock, ensuring you never miss a lead, even on weekends and holidays.</p>
+              <p className="text-sm text-muted-foreground">We get old leads and turn them into paying customers again, reviving your existing database.</p>
             </div>
             <div className="space-y-3">
               <h3 className="font-heading text-lg font-bold flex items-center gap-2">
-                <Icon icon="lucide:message-square" className="text-primary" />Human-like AI
+                <Icon icon="lucide:banknote" className="text-primary" />Pay Per Appointment
               </h3>
-              <p className="text-sm text-muted-foreground">Prospects won't even know they're talking to AI. Our systems engage naturally to qualify and convert.</p>
+              <p className="text-sm text-muted-foreground">No money up front. We get paid when you get paid—purely on a pay-per-booked-appointment basis.</p>
             </div>
             <div className="space-y-3">
               <h3 className="font-heading text-lg font-bold flex items-center gap-2">
                 <Icon icon="lucide:layers" className="text-primary" />Seamless CRM Sync
               </h3>
-              <p className="text-sm text-muted-foreground">Deep integrations with your existing tools. Leads, appointments, and transcripts sync directly to your CRM.</p>
+              <p className="text-sm text-muted-foreground">Deep integrations with existing tools. Leads, appointments, and transcripts sync directly to the CRM.</p>
             </div>
             <div className="space-y-3">
               <h3 className="font-heading text-lg font-bold flex items-center gap-2">
-                <Icon icon="lucide:shield-check" className="text-primary" />Fully Managed
+                <Icon icon="lucide:trending-up" className="text-primary" />Increase Sales, Decrease Headcount
               </h3>
-              <p className="text-sm text-muted-foreground">We don't just hand you software. We build, monitor, and optimize your entire AI infrastructure for you.</p>
+              <p className="text-sm text-muted-foreground">We help reactivate old leads on autopilot, increasing your sales while decreasing the need for front desk headcount.</p>
             </div>
           </div>
           <div className="text-center pt-8">
@@ -103,8 +99,6 @@ const DemoForTebby: React.FC = () => {
       <Testimonial />
 
       <FAQAccordion activeFaqIndex={activeFaqIndex} onToggleFaq={toggleFaq} />
-
-      <PopularForms />
 
       <Footer />
     </div>
