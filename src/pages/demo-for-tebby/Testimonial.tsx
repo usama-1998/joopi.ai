@@ -31,24 +31,24 @@ const testimonials: TestimonialData[] = [
   },
   {
     id: 1,
-    name: "Sarah L.",
-    role: "Real Estate Broker",
-    quote: "As a busy broker, I'm always on the road. Missing a call used to mean losing a commission. Since integrating Sarah, the AI instantly engages leads for me. It's literally a full-time assistant that never sleeps.",
-    seed: "Sarah",
+    name: "Dr. James Wilson",
+    role: "Founder, Wilson Plastic Surgery",
+    quote: "As a busy surgeon, I'm often in the OR. Missing a call used to mean losing a consultation. Since integrating Sarah, the AI instantly engages leads for me. It's literally a full-time assistant that never sleeps.",
+    seed: "James",
     stat1Value: "24/7 Response",
     stat1Label: "Zero missed opportunities",
     stat1Icon: "lucide:clock",
-    stat2Value: "18 Listings",
+    stat2Value: "18 Consults",
     stat2Label: "Secured entirely via AI chat",
-    stat2Icon: "lucide:home"
+    stat2Icon: "lucide:user-plus"
   },
   {
     id: 2,
-    name: "Jason T.",
-    role: "Marketing Consultant",
-    quote: "The Referral Automation is insane. I used to hate begging clients for reviews. Now, the system just asks them automatically after a win. My Google Business Profile went from 12 reviews to 85 in less than four months.",
-    seed: "Jason",
-    stat1Value: "85 Reviews",
+    name: "Lisa Chen",
+    role: "Practice Manager, Horizon MedSpa",
+    quote: "The patient follow-up is incredible. I used to hate having our staff manually call unbooked leads. Now, the system handles it automatically. Our schedule went from 60% full to 95% in less than four months.",
+    seed: "Lisa",
+    stat1Value: "95% Capacity",
     stat1Label: "Achieved on autopilot",
     stat1Icon: "lucide:star",
     stat2Value: "3x Organic",
@@ -57,10 +57,10 @@ const testimonials: TestimonialData[] = [
   },
   {
     id: 3,
-    name: "Emily W.",
-    role: "SaaS Founder",
+    name: "Dr. Michael Patel",
+    role: "Orthopedic Surgeon",
     quote: "Follow-ups used to be our biggest bottleneck. This outbound system completely overhauled our lead reactivation. Now, our past patients get a friendly call, and the entire appointment is booked into our calendar instantly.",
-    seed: "Emily",
+    seed: "Michael",
     stat1Value: "100% Automated",
     stat1Label: "Zero manual data entry",
     stat1Icon: "lucide:cpu",
@@ -70,12 +70,12 @@ const testimonials: TestimonialData[] = [
   },
   {
     id: 4,
-    name: "David K.",
-    role: "Law Firm Partner",
-    quote: "We were skeptical about AI handling our clients, but the natural language processing is incredible. Alex qualifies our legal leads perfectly and routes them to the right attorney's calendar without a hitch.",
-    seed: "David",
+    name: "Dr. Sarah Bennett",
+    role: "Founder, Bennett Wellness",
+    quote: "We were skeptical about AI handling our patients, but the conversational flow is incredible. Sarah qualifies our wellness leads perfectly and routes them to the right practitioner's calendar without a hitch.",
+    seed: "SarahB",
     stat1Value: "$120k Retained",
-    stat1Label: "In first-quarter billables",
+    stat1Label: "In first-quarter revenue",
     stat1Icon: "lucide:briefcase",
     stat2Value: "98% Accuracy",
     stat2Label: "In lead qualification routing",
@@ -98,7 +98,7 @@ export const Testimonial: React.FC = () => {
             <span className="text-[11px] font-bold uppercase tracking-widest">Client Success</span>
           </div>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground">
-            Real Results from Real Agencies
+            Real Results from Real Practices
           </h2>
         </div>
 

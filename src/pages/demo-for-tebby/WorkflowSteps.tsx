@@ -31,7 +31,7 @@ export const WorkflowSteps: React.FC = () => {
                 <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">We Analyze Your Bottlenecks</h3>
               </div>
               <p className="text-[17px] text-white/70 leading-relaxed md:ml-14">
-                We map out your current sales process, CRM setup, and lead flow to identify where you're losing money and wasting time. Our experts pinpoint the exact automations that will yield the highest ROI for your specific agency model.
+                We map out your current sales process, CRM setup, and lead flow to identify where you're losing money and wasting time. Our experts pinpoint the exact automations that will yield the highest ROI for your specific practice.
               </p>
             </div>
             {/* Visual Side */}
