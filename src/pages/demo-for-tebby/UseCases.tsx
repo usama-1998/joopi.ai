@@ -153,7 +153,7 @@ export const UseCases: React.FC = () => {
     {
       title: "Seamless Integration",
       outcome: "Fully Managed Setup",
-      description: "Appointments and transcripts sync directly to our CRM. We build and manage the entire infrastructure so you don't have to lift a finger.",
+      description: "It syncs directly to the CRM. We build and manage the entire infrastructure so you don't have to lift a finger.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full perspective-[800px]">
           {/* Glowing aura */}

@@ -31,7 +31,7 @@ export const WorkflowSteps: React.FC = () => {
                 <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">Database Reactivation</h3>
               </div>
               <p className="text-[17px] text-white/70 leading-relaxed md:ml-14">
-                We take your list of old leads and turn them into paying customers again. No complex bottleneck analysis needed—just straight to reactivation.
+                We just get old leads and turn them into paying customers again. We take your list of past inquiries and reactivate them instantly.
               </p>
             </div>
             {/* Visual Side */}

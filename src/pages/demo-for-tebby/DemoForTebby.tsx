@@ -4,7 +4,6 @@ import type { FormField } from '../../types';
 import { Navigation } from '../../components/Navigation';
 import { HeroSection } from './HeroSection';
 import { UseCases } from './UseCases';
-import { ScrollingFeatures } from './ScrollingFeatures';
 import { WorkflowSteps } from './WorkflowSteps';
 import { Testimonial } from './Testimonial';
 import { FAQAccordion } from './FAQAccordion';
@@ -49,9 +48,6 @@ const DemoForTebby: React.FC = () => {
       </header>
 
       <UseCases />
-
-      {/* Scrolling Features Section */}
-      <ScrollingFeatures onActionClick={scrollToWorkspace} />
 
       <WorkflowSteps />
 

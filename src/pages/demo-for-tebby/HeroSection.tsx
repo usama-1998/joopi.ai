@@ -57,17 +57,17 @@ export const HeroSection: React.FC<{ onTryFreeClick: () => void }> = ({ onTryFre
           <div className="flex items-center justify-center bg-white text-background rounded-full w-[16px] h-[16px] sm:w-[18px] sm:h-[18px]">
             <Icon icon="lucide:check" className="text-[10px] sm:text-[12px]" strokeWidth="4" />
           </div>
-          <span>Lead Win-Back</span>
+          <span>Pay Per Booked Appointment</span>
         </div>
         <span className="text-white/40 hidden sm:inline">/</span>
         <div className="flex items-center gap-2">
-          <Icon icon="lucide:mic" className="text-white text-[16px] sm:text-[18px]" strokeWidth="2.5" />
-          <span>Natural Conversation</span>
+          <Icon icon="lucide:banknote" className="text-white text-[16px] sm:text-[18px]" strokeWidth="2.5" />
+          <span>No Money Up Front</span>
         </div>
         <span className="text-white/40 hidden sm:inline">/</span>
         <div className="flex items-center gap-2">
-          <Icon icon="lucide:calendar" className="text-white text-[16px] sm:text-[18px]" strokeWidth="2.5" />
-          <span>Direct Booking</span>
+          <Icon icon="lucide:trending-down" className="text-white text-[16px] sm:text-[18px]" strokeWidth="2.5" />
+          <span>Decrease Headcount</span>
         </div>
       </div>
 
