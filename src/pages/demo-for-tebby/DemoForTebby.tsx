@@ -5,7 +5,6 @@ import { Navigation } from '../../components/Navigation';
 import { HeroSection } from './HeroSection';
 import { UseCases } from './UseCases';
 import { WorkflowSteps } from './WorkflowSteps';
-import { Testimonial } from './Testimonial';
 import { FAQAccordion } from './FAQAccordion';
 import { Footer } from '../../components/Footer';
 
@@ -91,8 +90,6 @@ const DemoForTebby: React.FC = () => {
           </div>
         </div>
       </section>
-
-      <Testimonial />
 
       <FAQAccordion activeFaqIndex={activeFaqIndex} onToggleFaq={toggleFaq} />
 
