@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 // NOTE: The shadow-DOM structure and aria-label are undocumented internals 
 // of Retell's widget (no official public API as of now). Verified by 
@@ -86,21 +87,31 @@ export const openRetellWidget = () => {
 };
 
 export const RetellWidget = () => {
+  const location = useLocation();
+
   useEffect(() => {
     let observer: MutationObserver | undefined;
+    const isTebbyDemo = location.pathname === '/demo-for-tebby';
 
     if (!document.getElementById("retell-widget")) {
       const script = document.createElement("script");
       script.id = "retell-widget";
       script.src = "https://dashboard.retellai.com/retell-widget-v2.js";
       script.type = "module";
-      script.setAttribute("data-voice-public-key", "public_key_dd0f5bf2461eed1bf27d3");
-      script.setAttribute("data-voice-agent-id", "agent_ef7aa1360c2423cea198b36f16");
       
-      // Chat agent attributes
-      script.setAttribute("data-public-key", "public_key_dd0f5bf2461eed1bf27d3");
-      script.setAttribute("data-agent-id", "agent_14a7ff5684470c6027d39e2710");
-      script.setAttribute("data-title", "Joopi AI");
+      if (isTebbyDemo) {
+        // Tebby Demo (Outbound Calling Agent Only)
+        script.setAttribute("data-voice-public-key", "public_key_dd0f5bf2461eed1bf27d3");
+        script.setAttribute("data-voice-agent-id", "agent_ad8915378a18cd89457511bee1");
+        script.setAttribute("data-title", "Radiance Dermatology");
+      } else {
+        // Default Joopi AI Hybrid Agent
+        script.setAttribute("data-voice-public-key", "public_key_dd0f5bf2461eed1bf27d3");
+        script.setAttribute("data-voice-agent-id", "agent_ef7aa1360c2423cea198b36f16");
+        script.setAttribute("data-public-key", "public_key_dd0f5bf2461eed1bf27d3");
+        script.setAttribute("data-agent-id", "agent_14a7ff5684470c6027d39e2710");
+        script.setAttribute("data-title", "Joopi AI");
+      }
       
       // Customize colors to match the website theme
       script.setAttribute("data-theme-color", "#0a0a0a"); // Background dark color
@@ -147,9 +158,9 @@ export const RetellWidget = () => {
               if (!text) return;
               
               if (text === 'Retell') {
-                node.textContent = 'Joopi AI';
+                node.textContent = isTebbyDemo ? 'Radiance Dermatology' : 'Joopi AI';
               } else if (text === 'Your RetellAI assistant') {
-                node.textContent = 'Your AI Sales Agent';
+                node.textContent = isTebbyDemo ? 'Front Desk Coordinator' : 'Your AI Sales Agent';
               } else if (text.includes('Powered by')) {
                 if (node.parentElement) {
                   node.parentElement.style.display = 'none';
@@ -204,8 +215,9 @@ export const RetellWidget = () => {
       if (root) {
         root.remove();
       }
+      retellButtonCache = null; // Important to reset cache on unmount
     };
-  }, []);
+  }, [location.pathname]);
 
   return null;
 };
