@@ -45,9 +45,9 @@ const UseCaseCard: React.FC<UseCaseData> = ({ title, outcome, description, visua
 export const UseCases: React.FC = () => {
   const cases: UseCaseData[] = [
     {
-      title: "Sarah: Voice AI Agent",
+      title: "Emma: Voice AI Agent",
       outcome: "Friendly Check-ins",
-      description: "Sarah calls old leads to check in on their interest in treatments. She sounds warm and human, ensuring a great patient experience.",
+      description: "Emma calls old leads to check in on their interest in treatments. She sounds warm and human, ensuring a great patient experience.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full">
           {/* Glowing aura */}
@@ -78,7 +78,7 @@ export const UseCases: React.FC = () => {
     {
       title: "No-Pressure Booking",
       outcome: "Higher Conversions",
-      description: "Sarah offers specific appointment times to get patients on the calendar, without ever sounding pushy or salesy.",
+      description: "Emma offers specific appointment times to get patients on the calendar, without ever sounding pushy or salesy.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full perspective-[800px]">
           {/* Glowing aura */}
@@ -116,7 +116,7 @@ export const UseCases: React.FC = () => {
     {
       title: "Gentle Objection Handling",
       outcome: "Natural Responses",
-      description: "If a patient hesitates, Sarah naturally acknowledges their concerns and offers lighter next steps like a free 10-minute phone consult.",
+      description: "If a patient hesitates, Emma naturally acknowledges their concerns and offers lighter next steps like a free 10-minute phone consult.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full">
           {/* Glowing aura */}
@@ -153,7 +153,7 @@ export const UseCases: React.FC = () => {
     {
       title: "Seamless Integration",
       outcome: "Fully Managed Setup",
-      description: "It syncs directly to the CRM. We build and manage the entire infrastructure so you don't have to lift a finger.",
+      description: "Everything syncs directly to the CRM, where you can view all the data at once. You have full access to view everything whenever you want.",
       visual: (
         <div className="relative flex items-center justify-center w-full h-full perspective-[800px]">
           {/* Glowing aura */}

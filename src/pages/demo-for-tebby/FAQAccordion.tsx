@@ -9,23 +9,23 @@ export const FAQAccordion: React.FC<{
   const faqs: FAQItem[] = [
     {
       question: "What is this demo?",
-      answer: "This is a demonstration of an outbound AI agent designed to reactivate old leads for physician practices, using a dermatology clinic as a specific example. Sarah is a specialized AI front desk coordinator designed to call past leads who inquired about treatments but never booked."
+      answer: "This is a demonstration of an outbound AI agent designed to reactivate old leads for physician practices, using a dermatology clinic as a specific example. Emma is a specialized AI front desk coordinator designed to call past leads who inquired about treatments but never booked."
     },
     {
-      question: "How does Sarah sound on the phone?",
+      question: "How does Emma sound on the phone?",
       answer: "She sounds like a warm, friendly human! Her pacing is relaxed, she takes occasional pauses, and she uses conversational filler words, making her sound like a real person rather than a scripted robot."
     },
     {
-      question: "What if a patient asks a question Sarah doesn't know?",
-      answer: "Sarah is trained not to guess. If she is asked a complex medical or pricing question outside her knowledge base, she politely lets the patient know that someone from the clinic will follow up with them."
+      question: "What if a patient asks a question Emma doesn't know?",
+      answer: "Emma is trained not to guess. If she is asked a complex medical or pricing question outside her knowledge base, she politely lets the patient know that someone from the clinic will follow up with them."
     },
     {
-      question: "Will Sarah sound pushy or sales-y?",
+      question: "Will Emma sound pushy or sales-y?",
       answer: "Not at all. Her primary goal is a gentle, courtesy check-in. If a patient hesitates, she doesn't argue; instead, she offers a lighter next step like a free 10-minute phone consultation."
     },
     {
-      question: "Does Sarah integrate with our clinic's software?",
-      answer: "Yes, Sarah can sync seamlessly with your existing calendar and CRM, ensuring that any booked appointments or follow-up notes are logged automatically."
+      question: "Does Emma integrate with our clinic's software?",
+      answer: "Yes, Emma can sync seamlessly with your existing calendar and CRM, ensuring that any booked appointments or follow-up notes are logged automatically."
     }
   ];
 

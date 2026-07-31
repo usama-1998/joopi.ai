@@ -16,7 +16,7 @@ export const WorkflowSteps: React.FC = () => {
             Launch Your Outbound Agent in 3 Steps
           </h2>
           <p className="text-lg text-white/70">
-            Whether it's deploying Sarah for voice calls, automated SMS follow-ups, or setting up complex CRM syncs, the workflow is always straightforward. Audit, Build, Scale.
+            Whether it's deploying Emma for voice calls, automated SMS follow-ups, or setting up complex CRM syncs, the workflow is always straightforward. Audit, Build, Scale.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export const WorkflowSteps: React.FC = () => {
                 <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">Build & Automate</h3>
               </div>
               <p className="text-[17px] text-white/70 leading-relaxed md:ml-14">
-                We deploy Sarah seamlessly into your ecosystem. Setting up your voice agent, SMS sequences, and deep CRM integrations requires zero technical effort on your end. 
+                We deploy Emma seamlessly into your ecosystem. Setting up your voice agent, SMS sequences, and deep CRM integrations requires zero technical effort on your end. 
               </p>
             </div>
             {/* Visual Side */}
@@ -141,7 +141,7 @@ export const WorkflowSteps: React.FC = () => {
                 <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">Scale & Profit</h3>
               </div>
               <p className="text-[17px] text-white/70 leading-relaxed md:ml-14">
-                Watch your calendar fill up with qualified appointments. You and your team just focus on what you do best: closing deals. We handle the follow-ups, the objections, and the busywork.
+                Watch your calendar fill up with qualified appointments. You and your team just focus on what you do best: treating patients. We handle the follow-ups, the objections, and the busywork.
               </p>
             </div>
             {/* Visual Side */}
