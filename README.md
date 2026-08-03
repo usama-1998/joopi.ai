@@ -74,10 +74,10 @@ This application features a highly polished **Black & Gold** premium design them
    npm run build
    ```
 
-## 🚀 Deployment (Netlify)
+## 🚀 Deployment (Cloudflare Pages)
 
-This project is configured for continuous deployment on Netlify.
-A `netlify.toml` file is included in the root directory to handle SPA redirects automatically.
+This project is configured for continuous deployment on Cloudflare Pages.
+A `_redirects` file is included in the `public` directory to handle SPA redirects automatically.
 
 ## 📝 License
 
